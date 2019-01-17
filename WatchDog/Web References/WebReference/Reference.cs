@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace WatchDog.WebReference {
+namespace WatchDog.WebReference{
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -24,11 +24,57 @@ namespace WatchDog.WebReference {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="AMSWebServiceSoap", Namespace="http://tempuri.org/")]
     public partial class AMSWebService : System.Web.Services.Protocols.SoapHttpClientProtocol {
+        
+        private System.Threading.SendOrPostCallback CheckEECertificationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback LotDispatch_API_ByAMSLotIdOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ChangeAMSLotAttributeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetONSEMITestProgramsForBOMOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback B2B_QORVO_USP_CHECKOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetNPIBulidPlanForAMSOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetMCNDeviceCodeForNotesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GenFCMaterialLabelInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback RCV_NotesCPBOM_NumberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback RCV_NotesPCN_NumberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ToGet_TestProgram_EffectiveDateOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPSMData_MaskIDListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetBladeRecipeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback eCIMToMESAlarmOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckResourceLogFileOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckResourceLogFileForTestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetECLikeSetting_HoldReasonOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetECLikeSetting_OwnerDepartmentOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ECLikeAllowSkipOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ECLikeCheckHaveSettingOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetECLikeSetting_IsHoldLotOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetDPTapingRecipeOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetRecipeNameOperationCompleted;
         
@@ -55,6 +101,8 @@ namespace WatchDog.WebReference {
         private System.Threading.SendOrPostCallback GetQCLPNCodeOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetQCLPNCodeBySiteOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetRICHTEKLPNCodeOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetMTKLPNCodeOperationCompleted;
         
@@ -100,9 +148,13 @@ namespace WatchDog.WebReference {
         
         private System.Threading.SendOrPostCallback GetAMSLotInfoByBlueToothTagOperationCompleted;
         
-        private System.Threading.SendOrPostCallback UpdateBlueToothTagRackLocationInfoOperationCompleted;
-        
         private System.Threading.SendOrPostCallback UpdateBlutToothTagBaseInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UpdateBlutToothTagBaseInfo4ServerDownOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DisassociateCarrierRelationByLotOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DisassociateCarrierRelationByTxnTypeOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetADIDPSMarkingSpecOperationCompleted;
         
@@ -112,23 +164,11 @@ namespace WatchDog.WebReference {
         
         private System.Threading.SendOrPostCallback CreateANFOperationCompleted;
         
-        private System.Threading.SendOrPostCallback CheckEECertificationOperationCompleted;
+        private System.Threading.SendOrPostCallback apiAmkGroupHoldMaintOperationCompleted;
         
-        private System.Threading.SendOrPostCallback GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted;
+        private System.Threading.SendOrPostCallback apiAmkGroupHoldMaintWithUserOperationCompleted;
         
-        private System.Threading.SendOrPostCallback LotDispatch_API_ByAMSLotIdOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ChangeAMSLotAttributeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetONSEMITestProgramsForBOMOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GenFCMaterialLabelInfoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback RCV_NotesCPBOM_NumberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback RCV_NotesPCN_NumberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ToGet_TestProgram_EffectiveDateOperationCompleted;
+        private System.Threading.SendOrPostCallback apiUpdateResourceStatusOperationCompleted;
         
         private System.Threading.SendOrPostCallback apiQACompleteOperationCompleted;
         
@@ -186,6 +226,10 @@ namespace WatchDog.WebReference {
         
         private System.Threading.SendOrPostCallback AMSDBQueryWithExcelOperationCompleted;
         
+        private System.Threading.SendOrPostCallback AMS_PI_IsPMBeforeRtnToMFGOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AMS_ShutdownMCOperationCompleted;
+        
         private System.Threading.SendOrPostCallback eCIMInfoToAMSPIOperationCompleted;
         
         private System.Threading.SendOrPostCallback QAOperationLotMoveOperationCompleted;
@@ -232,25 +276,13 @@ namespace WatchDog.WebReference {
         
         private System.Threading.SendOrPostCallback GenAttributeNewValue2OperationCompleted;
         
+        private System.Threading.SendOrPostCallback GenAttributeNewValue_SAPInterfaceOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetPSMDataOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetPSMData_ProductCustomerReqInfoOperationCompleted;
         
-        private System.Threading.SendOrPostCallback GetPSMData_MaskIDListOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CheckResourceLogFileOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CheckResourceLogFileForTestOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetECLikeSetting_HoldReasonOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetECLikeSetting_OwnerDepartmentOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ECLikeAllowSkipOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ECLikeCheckHaveSettingOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetDPTapingRecipeOperationCompleted;
+        private System.Threading.SendOrPostCallback VMM_SendToEasyFlowOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetAMSServiceStatusOperationCompleted;
         
@@ -366,12 +398,6 @@ namespace WatchDog.WebReference {
         
         private System.Threading.SendOrPostCallback apiResourceChangeStateOperationCompleted;
         
-        private System.Threading.SendOrPostCallback apiAmkGroupHoldMaintOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback apiAmkGroupHoldMaintWithUserOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback apiUpdateResourceStatusOperationCompleted;
-        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -411,6 +437,75 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
+        public event CheckEECertificationCompletedEventHandler CheckEECertificationCompleted;
+        
+        /// <remarks/>
+        public event GetAMSCusLotNO_CusNameByUstLotNoCompletedEventHandler GetAMSCusLotNO_CusNameByUstLotNoCompleted;
+        
+        /// <remarks/>
+        public event LotDispatch_API_ByAMSLotIdCompletedEventHandler LotDispatch_API_ByAMSLotIdCompleted;
+        
+        /// <remarks/>
+        public event ChangeAMSLotAttributeCompletedEventHandler ChangeAMSLotAttributeCompleted;
+        
+        /// <remarks/>
+        public event GetONSEMITestProgramsForBOMCompletedEventHandler GetONSEMITestProgramsForBOMCompleted;
+        
+        /// <remarks/>
+        public event B2B_QORVO_USP_CHECKCompletedEventHandler B2B_QORVO_USP_CHECKCompleted;
+        
+        /// <remarks/>
+        public event GetNPIBulidPlanForAMSCompletedEventHandler GetNPIBulidPlanForAMSCompleted;
+        
+        /// <remarks/>
+        public event GetMCNDeviceCodeForNotesCompletedEventHandler GetMCNDeviceCodeForNotesCompleted;
+        
+        /// <remarks/>
+        public event GenFCMaterialLabelInfoCompletedEventHandler GenFCMaterialLabelInfoCompleted;
+        
+        /// <remarks/>
+        public event RCV_NotesCPBOM_NumberCompletedEventHandler RCV_NotesCPBOM_NumberCompleted;
+        
+        /// <remarks/>
+        public event RCV_NotesPCN_NumberCompletedEventHandler RCV_NotesPCN_NumberCompleted;
+        
+        /// <remarks/>
+        public event ToGet_TestProgram_EffectiveDateCompletedEventHandler ToGet_TestProgram_EffectiveDateCompleted;
+        
+        /// <remarks/>
+        public event GetPSMData_MaskIDListCompletedEventHandler GetPSMData_MaskIDListCompleted;
+        
+        /// <remarks/>
+        public event GetBladeRecipeCompletedEventHandler GetBladeRecipeCompleted;
+        
+        /// <remarks/>
+        public event eCIMToMESAlarmCompletedEventHandler eCIMToMESAlarmCompleted;
+        
+        /// <remarks/>
+        public event CheckResourceLogFileCompletedEventHandler CheckResourceLogFileCompleted;
+        
+        /// <remarks/>
+        public event CheckResourceLogFileForTestCompletedEventHandler CheckResourceLogFileForTestCompleted;
+        
+        /// <remarks/>
+        public event GetECLikeSetting_HoldReasonCompletedEventHandler GetECLikeSetting_HoldReasonCompleted;
+        
+        /// <remarks/>
+        public event GetECLikeSetting_OwnerDepartmentCompletedEventHandler GetECLikeSetting_OwnerDepartmentCompleted;
+        
+        /// <remarks/>
+        public event ECLikeAllowSkipCompletedEventHandler ECLikeAllowSkipCompleted;
+        
+        /// <remarks/>
+        public event ECLikeCheckHaveSettingCompletedEventHandler ECLikeCheckHaveSettingCompleted;
+        
+        /// <remarks/>
+        public event GetECLikeSetting_IsHoldLotCompletedEventHandler GetECLikeSetting_IsHoldLotCompleted;
+        
+        /// <remarks/>
+        public event GetDPTapingRecipeCompletedEventHandler GetDPTapingRecipeCompleted;
+        
+        /// <remarks/>
         public event GetRecipeNameCompletedEventHandler GetRecipeNameCompleted;
         
         /// <remarks/>
@@ -448,6 +543,9 @@ namespace WatchDog.WebReference {
         
         /// <remarks/>
         public event GetQCLPNCodeBySiteCompletedEventHandler GetQCLPNCodeBySiteCompleted;
+        
+        /// <remarks/>
+        public event GetRICHTEKLPNCodeCompletedEventHandler GetRICHTEKLPNCodeCompleted;
         
         /// <remarks/>
         public event GetMTKLPNCodeCompletedEventHandler GetMTKLPNCodeCompleted;
@@ -516,10 +614,16 @@ namespace WatchDog.WebReference {
         public event GetAMSLotInfoByBlueToothTagCompletedEventHandler GetAMSLotInfoByBlueToothTagCompleted;
         
         /// <remarks/>
-        public event UpdateBlueToothTagRackLocationInfoCompletedEventHandler UpdateBlueToothTagRackLocationInfoCompleted;
+        public event UpdateBlutToothTagBaseInfoCompletedEventHandler UpdateBlutToothTagBaseInfoCompleted;
         
         /// <remarks/>
-        public event UpdateBlutToothTagBaseInfoCompletedEventHandler UpdateBlutToothTagBaseInfoCompleted;
+        public event UpdateBlutToothTagBaseInfo4ServerDownCompletedEventHandler UpdateBlutToothTagBaseInfo4ServerDownCompleted;
+        
+        /// <remarks/>
+        public event DisassociateCarrierRelationByLotCompletedEventHandler DisassociateCarrierRelationByLotCompleted;
+        
+        /// <remarks/>
+        public event DisassociateCarrierRelationByTxnTypeCompletedEventHandler DisassociateCarrierRelationByTxnTypeCompleted;
         
         /// <remarks/>
         public event GetADIDPSMarkingSpecCompletedEventHandler GetADIDPSMarkingSpecCompleted;
@@ -534,31 +638,13 @@ namespace WatchDog.WebReference {
         public event CreateANFCompletedEventHandler CreateANFCompleted;
         
         /// <remarks/>
-        public event CheckEECertificationCompletedEventHandler CheckEECertificationCompleted;
+        public event apiAmkGroupHoldMaintCompletedEventHandler apiAmkGroupHoldMaintCompleted;
         
         /// <remarks/>
-        public event GetAMSCusLotNO_CusNameByUstLotNoCompletedEventHandler GetAMSCusLotNO_CusNameByUstLotNoCompleted;
+        public event apiAmkGroupHoldMaintWithUserCompletedEventHandler apiAmkGroupHoldMaintWithUserCompleted;
         
         /// <remarks/>
-        public event LotDispatch_API_ByAMSLotIdCompletedEventHandler LotDispatch_API_ByAMSLotIdCompleted;
-        
-        /// <remarks/>
-        public event ChangeAMSLotAttributeCompletedEventHandler ChangeAMSLotAttributeCompleted;
-        
-        /// <remarks/>
-        public event GetONSEMITestProgramsForBOMCompletedEventHandler GetONSEMITestProgramsForBOMCompleted;
-        
-        /// <remarks/>
-        public event GenFCMaterialLabelInfoCompletedEventHandler GenFCMaterialLabelInfoCompleted;
-        
-        /// <remarks/>
-        public event RCV_NotesCPBOM_NumberCompletedEventHandler RCV_NotesCPBOM_NumberCompleted;
-        
-        /// <remarks/>
-        public event RCV_NotesPCN_NumberCompletedEventHandler RCV_NotesPCN_NumberCompleted;
-        
-        /// <remarks/>
-        public event ToGet_TestProgram_EffectiveDateCompletedEventHandler ToGet_TestProgram_EffectiveDateCompleted;
+        public event apiUpdateResourceStatusCompletedEventHandler apiUpdateResourceStatusCompleted;
         
         /// <remarks/>
         public event apiQACompleteCompletedEventHandler apiQACompleteCompleted;
@@ -645,6 +731,12 @@ namespace WatchDog.WebReference {
         public event AMSDBQueryWithExcelCompletedEventHandler AMSDBQueryWithExcelCompleted;
         
         /// <remarks/>
+        public event AMS_PI_IsPMBeforeRtnToMFGCompletedEventHandler AMS_PI_IsPMBeforeRtnToMFGCompleted;
+        
+        /// <remarks/>
+        public event AMS_ShutdownMCCompletedEventHandler AMS_ShutdownMCCompleted;
+        
+        /// <remarks/>
         public event eCIMInfoToAMSPICompletedEventHandler eCIMInfoToAMSPICompleted;
         
         /// <remarks/>
@@ -714,34 +806,16 @@ namespace WatchDog.WebReference {
         public event GenAttributeNewValue2CompletedEventHandler GenAttributeNewValue2Completed;
         
         /// <remarks/>
+        public event GenAttributeNewValue_SAPInterfaceCompletedEventHandler GenAttributeNewValue_SAPInterfaceCompleted;
+        
+        /// <remarks/>
         public event GetPSMDataCompletedEventHandler GetPSMDataCompleted;
         
         /// <remarks/>
         public event GetPSMData_ProductCustomerReqInfoCompletedEventHandler GetPSMData_ProductCustomerReqInfoCompleted;
         
         /// <remarks/>
-        public event GetPSMData_MaskIDListCompletedEventHandler GetPSMData_MaskIDListCompleted;
-        
-        /// <remarks/>
-        public event CheckResourceLogFileCompletedEventHandler CheckResourceLogFileCompleted;
-        
-        /// <remarks/>
-        public event CheckResourceLogFileForTestCompletedEventHandler CheckResourceLogFileForTestCompleted;
-        
-        /// <remarks/>
-        public event GetECLikeSetting_HoldReasonCompletedEventHandler GetECLikeSetting_HoldReasonCompleted;
-        
-        /// <remarks/>
-        public event GetECLikeSetting_OwnerDepartmentCompletedEventHandler GetECLikeSetting_OwnerDepartmentCompleted;
-        
-        /// <remarks/>
-        public event ECLikeAllowSkipCompletedEventHandler ECLikeAllowSkipCompleted;
-        
-        /// <remarks/>
-        public event ECLikeCheckHaveSettingCompletedEventHandler ECLikeCheckHaveSettingCompleted;
-        
-        /// <remarks/>
-        public event GetDPTapingRecipeCompletedEventHandler GetDPTapingRecipeCompleted;
+        public event VMM_SendToEasyFlowCompletedEventHandler VMM_SendToEasyFlowCompleted;
         
         /// <remarks/>
         public event GetAMSServiceStatusCompletedEventHandler GetAMSServiceStatusCompleted;
@@ -915,13 +989,780 @@ namespace WatchDog.WebReference {
         public event apiResourceChangeStateCompletedEventHandler apiResourceChangeStateCompleted;
         
         /// <remarks/>
-        public event apiAmkGroupHoldMaintCompletedEventHandler apiAmkGroupHoldMaintCompleted;
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckEECertification", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string CheckEECertification(string pEmployeeName, string pResourceName) {
+            object[] results = this.Invoke("CheckEECertification", new object[] {
+                        pEmployeeName,
+                        pResourceName});
+            return ((string)(results[0]));
+        }
         
         /// <remarks/>
-        public event apiAmkGroupHoldMaintWithUserCompletedEventHandler apiAmkGroupHoldMaintWithUserCompleted;
+        public void CheckEECertificationAsync(string pEmployeeName, string pResourceName) {
+            this.CheckEECertificationAsync(pEmployeeName, pResourceName, null);
+        }
         
         /// <remarks/>
-        public event apiUpdateResourceStatusCompletedEventHandler apiUpdateResourceStatusCompleted;
+        public void CheckEECertificationAsync(string pEmployeeName, string pResourceName, object userState) {
+            if ((this.CheckEECertificationOperationCompleted == null)) {
+                this.CheckEECertificationOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckEECertificationOperationCompleted);
+            }
+            this.InvokeAsync("CheckEECertification", new object[] {
+                        pEmployeeName,
+                        pResourceName}, this.CheckEECertificationOperationCompleted, userState);
+        }
+        
+        private void OnCheckEECertificationOperationCompleted(object arg) {
+            if ((this.CheckEECertificationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckEECertificationCompleted(this, new CheckEECertificationCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetAMSCusLotNO_CusNameByUstLotNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetAMSCusLotNO_CusNameByUstLotNo(string UstLotNo, ref string sMsg) {
+            object[] results = this.Invoke("GetAMSCusLotNO_CusNameByUstLotNo", new object[] {
+                        UstLotNo,
+                        sMsg});
+            sMsg = ((string)(results[1]));
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetAMSCusLotNO_CusNameByUstLotNoAsync(string UstLotNo, string sMsg) {
+            this.GetAMSCusLotNO_CusNameByUstLotNoAsync(UstLotNo, sMsg, null);
+        }
+        
+        /// <remarks/>
+        public void GetAMSCusLotNO_CusNameByUstLotNoAsync(string UstLotNo, string sMsg, object userState) {
+            if ((this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted == null)) {
+                this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAMSCusLotNO_CusNameByUstLotNoOperationCompleted);
+            }
+            this.InvokeAsync("GetAMSCusLotNO_CusNameByUstLotNo", new object[] {
+                        UstLotNo,
+                        sMsg}, this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted, userState);
+        }
+        
+        private void OnGetAMSCusLotNO_CusNameByUstLotNoOperationCompleted(object arg) {
+            if ((this.GetAMSCusLotNO_CusNameByUstLotNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetAMSCusLotNO_CusNameByUstLotNoCompleted(this, new GetAMSCusLotNO_CusNameByUstLotNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/LotDispatch_API_ByAMSLotId", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool LotDispatch_API_ByAMSLotId(string sAMSLotId, ref string sMsg, string sComments, string sUserName) {
+            object[] results = this.Invoke("LotDispatch_API_ByAMSLotId", new object[] {
+                        sAMSLotId,
+                        sMsg,
+                        sComments,
+                        sUserName});
+            sMsg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void LotDispatch_API_ByAMSLotIdAsync(string sAMSLotId, string sMsg, string sComments, string sUserName) {
+            this.LotDispatch_API_ByAMSLotIdAsync(sAMSLotId, sMsg, sComments, sUserName, null);
+        }
+        
+        /// <remarks/>
+        public void LotDispatch_API_ByAMSLotIdAsync(string sAMSLotId, string sMsg, string sComments, string sUserName, object userState) {
+            if ((this.LotDispatch_API_ByAMSLotIdOperationCompleted == null)) {
+                this.LotDispatch_API_ByAMSLotIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLotDispatch_API_ByAMSLotIdOperationCompleted);
+            }
+            this.InvokeAsync("LotDispatch_API_ByAMSLotId", new object[] {
+                        sAMSLotId,
+                        sMsg,
+                        sComments,
+                        sUserName}, this.LotDispatch_API_ByAMSLotIdOperationCompleted, userState);
+        }
+        
+        private void OnLotDispatch_API_ByAMSLotIdOperationCompleted(object arg) {
+            if ((this.LotDispatch_API_ByAMSLotIdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.LotDispatch_API_ByAMSLotIdCompleted(this, new LotDispatch_API_ByAMSLotIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ChangeAMSLotAttribute", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ChangeAMSLotAttribute(string sAMSLotId, string sAttributeName, string sAttributeValue, ref string sMsg) {
+            object[] results = this.Invoke("ChangeAMSLotAttribute", new object[] {
+                        sAMSLotId,
+                        sAttributeName,
+                        sAttributeValue,
+                        sMsg});
+            sMsg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ChangeAMSLotAttributeAsync(string sAMSLotId, string sAttributeName, string sAttributeValue, string sMsg) {
+            this.ChangeAMSLotAttributeAsync(sAMSLotId, sAttributeName, sAttributeValue, sMsg, null);
+        }
+        
+        /// <remarks/>
+        public void ChangeAMSLotAttributeAsync(string sAMSLotId, string sAttributeName, string sAttributeValue, string sMsg, object userState) {
+            if ((this.ChangeAMSLotAttributeOperationCompleted == null)) {
+                this.ChangeAMSLotAttributeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnChangeAMSLotAttributeOperationCompleted);
+            }
+            this.InvokeAsync("ChangeAMSLotAttribute", new object[] {
+                        sAMSLotId,
+                        sAttributeName,
+                        sAttributeValue,
+                        sMsg}, this.ChangeAMSLotAttributeOperationCompleted, userState);
+        }
+        
+        private void OnChangeAMSLotAttributeOperationCompleted(object arg) {
+            if ((this.ChangeAMSLotAttributeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ChangeAMSLotAttributeCompleted(this, new ChangeAMSLotAttributeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetONSEMITestProgramsForBOM", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetONSEMITestProgramsForBOM(string sDevice, string sTester) {
+            object[] results = this.Invoke("GetONSEMITestProgramsForBOM", new object[] {
+                        sDevice,
+                        sTester});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetONSEMITestProgramsForBOMAsync(string sDevice, string sTester) {
+            this.GetONSEMITestProgramsForBOMAsync(sDevice, sTester, null);
+        }
+        
+        /// <remarks/>
+        public void GetONSEMITestProgramsForBOMAsync(string sDevice, string sTester, object userState) {
+            if ((this.GetONSEMITestProgramsForBOMOperationCompleted == null)) {
+                this.GetONSEMITestProgramsForBOMOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetONSEMITestProgramsForBOMOperationCompleted);
+            }
+            this.InvokeAsync("GetONSEMITestProgramsForBOM", new object[] {
+                        sDevice,
+                        sTester}, this.GetONSEMITestProgramsForBOMOperationCompleted, userState);
+        }
+        
+        private void OnGetONSEMITestProgramsForBOMOperationCompleted(object arg) {
+            if ((this.GetONSEMITestProgramsForBOMCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetONSEMITestProgramsForBOMCompleted(this, new GetONSEMITestProgramsForBOMCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/B2B_QORVO_USP_CHECK", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string B2B_QORVO_USP_CHECK(string sRC, string sUserName) {
+            object[] results = this.Invoke("B2B_QORVO_USP_CHECK", new object[] {
+                        sRC,
+                        sUserName});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void B2B_QORVO_USP_CHECKAsync(string sRC, string sUserName) {
+            this.B2B_QORVO_USP_CHECKAsync(sRC, sUserName, null);
+        }
+        
+        /// <remarks/>
+        public void B2B_QORVO_USP_CHECKAsync(string sRC, string sUserName, object userState) {
+            if ((this.B2B_QORVO_USP_CHECKOperationCompleted == null)) {
+                this.B2B_QORVO_USP_CHECKOperationCompleted = new System.Threading.SendOrPostCallback(this.OnB2B_QORVO_USP_CHECKOperationCompleted);
+            }
+            this.InvokeAsync("B2B_QORVO_USP_CHECK", new object[] {
+                        sRC,
+                        sUserName}, this.B2B_QORVO_USP_CHECKOperationCompleted, userState);
+        }
+        
+        private void OnB2B_QORVO_USP_CHECKOperationCompleted(object arg) {
+            if ((this.B2B_QORVO_USP_CHECKCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.B2B_QORVO_USP_CHECKCompleted(this, new B2B_QORVO_USP_CHECKCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetNPIBulidPlanForAMS", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetNPIBulidPlanForAMS(string sLotID, string sWaferID) {
+            object[] results = this.Invoke("GetNPIBulidPlanForAMS", new object[] {
+                        sLotID,
+                        sWaferID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetNPIBulidPlanForAMSAsync(string sLotID, string sWaferID) {
+            this.GetNPIBulidPlanForAMSAsync(sLotID, sWaferID, null);
+        }
+        
+        /// <remarks/>
+        public void GetNPIBulidPlanForAMSAsync(string sLotID, string sWaferID, object userState) {
+            if ((this.GetNPIBulidPlanForAMSOperationCompleted == null)) {
+                this.GetNPIBulidPlanForAMSOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetNPIBulidPlanForAMSOperationCompleted);
+            }
+            this.InvokeAsync("GetNPIBulidPlanForAMS", new object[] {
+                        sLotID,
+                        sWaferID}, this.GetNPIBulidPlanForAMSOperationCompleted, userState);
+        }
+        
+        private void OnGetNPIBulidPlanForAMSOperationCompleted(object arg) {
+            if ((this.GetNPIBulidPlanForAMSCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetNPIBulidPlanForAMSCompleted(this, new GetNPIBulidPlanForAMSCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetMCNDeviceCodeForNotes", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetMCNDeviceCodeForNotes(string sMCN) {
+            object[] results = this.Invoke("GetMCNDeviceCodeForNotes", new object[] {
+                        sMCN});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetMCNDeviceCodeForNotesAsync(string sMCN) {
+            this.GetMCNDeviceCodeForNotesAsync(sMCN, null);
+        }
+        
+        /// <remarks/>
+        public void GetMCNDeviceCodeForNotesAsync(string sMCN, object userState) {
+            if ((this.GetMCNDeviceCodeForNotesOperationCompleted == null)) {
+                this.GetMCNDeviceCodeForNotesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetMCNDeviceCodeForNotesOperationCompleted);
+            }
+            this.InvokeAsync("GetMCNDeviceCodeForNotes", new object[] {
+                        sMCN}, this.GetMCNDeviceCodeForNotesOperationCompleted, userState);
+        }
+        
+        private void OnGetMCNDeviceCodeForNotesOperationCompleted(object arg) {
+            if ((this.GetMCNDeviceCodeForNotesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetMCNDeviceCodeForNotesCompleted(this, new GetMCNDeviceCodeForNotesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GenFCMaterialLabelInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GenFCMaterialLabelInfo(string sMaterialInfo) {
+            object[] results = this.Invoke("GenFCMaterialLabelInfo", new object[] {
+                        sMaterialInfo});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GenFCMaterialLabelInfoAsync(string sMaterialInfo) {
+            this.GenFCMaterialLabelInfoAsync(sMaterialInfo, null);
+        }
+        
+        /// <remarks/>
+        public void GenFCMaterialLabelInfoAsync(string sMaterialInfo, object userState) {
+            if ((this.GenFCMaterialLabelInfoOperationCompleted == null)) {
+                this.GenFCMaterialLabelInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGenFCMaterialLabelInfoOperationCompleted);
+            }
+            this.InvokeAsync("GenFCMaterialLabelInfo", new object[] {
+                        sMaterialInfo}, this.GenFCMaterialLabelInfoOperationCompleted, userState);
+        }
+        
+        private void OnGenFCMaterialLabelInfoOperationCompleted(object arg) {
+            if ((this.GenFCMaterialLabelInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GenFCMaterialLabelInfoCompleted(this, new GenFCMaterialLabelInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RCV_NotesCPBOM_Number", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string RCV_NotesCPBOM_Number(string CP_BOM_RequestNo, string TargetDevice, string TestProgram) {
+            object[] results = this.Invoke("RCV_NotesCPBOM_Number", new object[] {
+                        CP_BOM_RequestNo,
+                        TargetDevice,
+                        TestProgram});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RCV_NotesCPBOM_NumberAsync(string CP_BOM_RequestNo, string TargetDevice, string TestProgram) {
+            this.RCV_NotesCPBOM_NumberAsync(CP_BOM_RequestNo, TargetDevice, TestProgram, null);
+        }
+        
+        /// <remarks/>
+        public void RCV_NotesCPBOM_NumberAsync(string CP_BOM_RequestNo, string TargetDevice, string TestProgram, object userState) {
+            if ((this.RCV_NotesCPBOM_NumberOperationCompleted == null)) {
+                this.RCV_NotesCPBOM_NumberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRCV_NotesCPBOM_NumberOperationCompleted);
+            }
+            this.InvokeAsync("RCV_NotesCPBOM_Number", new object[] {
+                        CP_BOM_RequestNo,
+                        TargetDevice,
+                        TestProgram}, this.RCV_NotesCPBOM_NumberOperationCompleted, userState);
+        }
+        
+        private void OnRCV_NotesCPBOM_NumberOperationCompleted(object arg) {
+            if ((this.RCV_NotesCPBOM_NumberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RCV_NotesCPBOM_NumberCompleted(this, new RCV_NotesCPBOM_NumberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RCV_NotesPCN_Number", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string RCV_NotesPCN_Number(string CP_PCN_RequestNo, string SpecNo, string CreateDate) {
+            object[] results = this.Invoke("RCV_NotesPCN_Number", new object[] {
+                        CP_PCN_RequestNo,
+                        SpecNo,
+                        CreateDate});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RCV_NotesPCN_NumberAsync(string CP_PCN_RequestNo, string SpecNo, string CreateDate) {
+            this.RCV_NotesPCN_NumberAsync(CP_PCN_RequestNo, SpecNo, CreateDate, null);
+        }
+        
+        /// <remarks/>
+        public void RCV_NotesPCN_NumberAsync(string CP_PCN_RequestNo, string SpecNo, string CreateDate, object userState) {
+            if ((this.RCV_NotesPCN_NumberOperationCompleted == null)) {
+                this.RCV_NotesPCN_NumberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRCV_NotesPCN_NumberOperationCompleted);
+            }
+            this.InvokeAsync("RCV_NotesPCN_Number", new object[] {
+                        CP_PCN_RequestNo,
+                        SpecNo,
+                        CreateDate}, this.RCV_NotesPCN_NumberOperationCompleted, userState);
+        }
+        
+        private void OnRCV_NotesPCN_NumberOperationCompleted(object arg) {
+            if ((this.RCV_NotesPCN_NumberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RCV_NotesPCN_NumberCompleted(this, new RCV_NotesPCN_NumberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ToGet_TestProgram_EffectiveDate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string ToGet_TestProgram_EffectiveDate(string TargetDevice, string Old_TestProgram) {
+            object[] results = this.Invoke("ToGet_TestProgram_EffectiveDate", new object[] {
+                        TargetDevice,
+                        Old_TestProgram});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ToGet_TestProgram_EffectiveDateAsync(string TargetDevice, string Old_TestProgram) {
+            this.ToGet_TestProgram_EffectiveDateAsync(TargetDevice, Old_TestProgram, null);
+        }
+        
+        /// <remarks/>
+        public void ToGet_TestProgram_EffectiveDateAsync(string TargetDevice, string Old_TestProgram, object userState) {
+            if ((this.ToGet_TestProgram_EffectiveDateOperationCompleted == null)) {
+                this.ToGet_TestProgram_EffectiveDateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnToGet_TestProgram_EffectiveDateOperationCompleted);
+            }
+            this.InvokeAsync("ToGet_TestProgram_EffectiveDate", new object[] {
+                        TargetDevice,
+                        Old_TestProgram}, this.ToGet_TestProgram_EffectiveDateOperationCompleted, userState);
+        }
+        
+        private void OnToGet_TestProgram_EffectiveDateOperationCompleted(object arg) {
+            if ((this.ToGet_TestProgram_EffectiveDateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ToGet_TestProgram_EffectiveDateCompleted(this, new ToGet_TestProgram_EffectiveDateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPSMData_MaskIDList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetPSMData_MaskIDList(string sTrackingID) {
+            object[] results = this.Invoke("GetPSMData_MaskIDList", new object[] {
+                        sTrackingID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPSMData_MaskIDListAsync(string sTrackingID) {
+            this.GetPSMData_MaskIDListAsync(sTrackingID, null);
+        }
+        
+        /// <remarks/>
+        public void GetPSMData_MaskIDListAsync(string sTrackingID, object userState) {
+            if ((this.GetPSMData_MaskIDListOperationCompleted == null)) {
+                this.GetPSMData_MaskIDListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPSMData_MaskIDListOperationCompleted);
+            }
+            this.InvokeAsync("GetPSMData_MaskIDList", new object[] {
+                        sTrackingID}, this.GetPSMData_MaskIDListOperationCompleted, userState);
+        }
+        
+        private void OnGetPSMData_MaskIDListOperationCompleted(object arg) {
+            if ((this.GetPSMData_MaskIDListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPSMData_MaskIDListCompleted(this, new GetPSMData_MaskIDListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetBladeRecipe", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetBladeRecipe(string RC, string SID) {
+            object[] results = this.Invoke("GetBladeRecipe", new object[] {
+                        RC,
+                        SID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetBladeRecipeAsync(string RC, string SID) {
+            this.GetBladeRecipeAsync(RC, SID, null);
+        }
+        
+        /// <remarks/>
+        public void GetBladeRecipeAsync(string RC, string SID, object userState) {
+            if ((this.GetBladeRecipeOperationCompleted == null)) {
+                this.GetBladeRecipeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBladeRecipeOperationCompleted);
+            }
+            this.InvokeAsync("GetBladeRecipe", new object[] {
+                        RC,
+                        SID}, this.GetBladeRecipeOperationCompleted, userState);
+        }
+        
+        private void OnGetBladeRecipeOperationCompleted(object arg) {
+            if ((this.GetBladeRecipeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetBladeRecipeCompleted(this, new GetBladeRecipeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/eCIMToMESAlarm", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string eCIMToMESAlarm(string RC, string OPERATION, string MC, string REEL, string POSITION, string ALARM, string Action) {
+            object[] results = this.Invoke("eCIMToMESAlarm", new object[] {
+                        RC,
+                        OPERATION,
+                        MC,
+                        REEL,
+                        POSITION,
+                        ALARM,
+                        Action});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void eCIMToMESAlarmAsync(string RC, string OPERATION, string MC, string REEL, string POSITION, string ALARM, string Action) {
+            this.eCIMToMESAlarmAsync(RC, OPERATION, MC, REEL, POSITION, ALARM, Action, null);
+        }
+        
+        /// <remarks/>
+        public void eCIMToMESAlarmAsync(string RC, string OPERATION, string MC, string REEL, string POSITION, string ALARM, string Action, object userState) {
+            if ((this.eCIMToMESAlarmOperationCompleted == null)) {
+                this.eCIMToMESAlarmOperationCompleted = new System.Threading.SendOrPostCallback(this.OneCIMToMESAlarmOperationCompleted);
+            }
+            this.InvokeAsync("eCIMToMESAlarm", new object[] {
+                        RC,
+                        OPERATION,
+                        MC,
+                        REEL,
+                        POSITION,
+                        ALARM,
+                        Action}, this.eCIMToMESAlarmOperationCompleted, userState);
+        }
+        
+        private void OneCIMToMESAlarmOperationCompleted(object arg) {
+            if ((this.eCIMToMESAlarmCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.eCIMToMESAlarmCompleted(this, new eCIMToMESAlarmCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckResourceLogFile", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string CheckResourceLogFile(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("CheckResourceLogFile", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CheckResourceLogFileAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.CheckResourceLogFileAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void CheckResourceLogFileAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.CheckResourceLogFileOperationCompleted == null)) {
+                this.CheckResourceLogFileOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckResourceLogFileOperationCompleted);
+            }
+            this.InvokeAsync("CheckResourceLogFile", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.CheckResourceLogFileOperationCompleted, userState);
+        }
+        
+        private void OnCheckResourceLogFileOperationCompleted(object arg) {
+            if ((this.CheckResourceLogFileCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckResourceLogFileCompleted(this, new CheckResourceLogFileCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckResourceLogFileForTest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string CheckResourceLogFileForTest(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime) {
+            object[] results = this.Invoke("CheckResourceLogFileForTest", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID,
+                        StartTime,
+                        EndTime});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CheckResourceLogFileForTestAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime) {
+            this.CheckResourceLogFileForTestAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, StartTime, EndTime, null);
+        }
+        
+        /// <remarks/>
+        public void CheckResourceLogFileForTestAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime, object userState) {
+            if ((this.CheckResourceLogFileForTestOperationCompleted == null)) {
+                this.CheckResourceLogFileForTestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckResourceLogFileForTestOperationCompleted);
+            }
+            this.InvokeAsync("CheckResourceLogFileForTest", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID,
+                        StartTime,
+                        EndTime}, this.CheckResourceLogFileForTestOperationCompleted, userState);
+        }
+        
+        private void OnCheckResourceLogFileForTestOperationCompleted(object arg) {
+            if ((this.CheckResourceLogFileForTestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckResourceLogFileForTestCompleted(this, new CheckResourceLogFileForTestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetECLikeSetting_HoldReason", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetECLikeSetting_HoldReason(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("GetECLikeSetting_HoldReason", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_HoldReasonAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.GetECLikeSetting_HoldReasonAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_HoldReasonAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.GetECLikeSetting_HoldReasonOperationCompleted == null)) {
+                this.GetECLikeSetting_HoldReasonOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetECLikeSetting_HoldReasonOperationCompleted);
+            }
+            this.InvokeAsync("GetECLikeSetting_HoldReason", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.GetECLikeSetting_HoldReasonOperationCompleted, userState);
+        }
+        
+        private void OnGetECLikeSetting_HoldReasonOperationCompleted(object arg) {
+            if ((this.GetECLikeSetting_HoldReasonCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetECLikeSetting_HoldReasonCompleted(this, new GetECLikeSetting_HoldReasonCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetECLikeSetting_OwnerDepartment", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetECLikeSetting_OwnerDepartment(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("GetECLikeSetting_OwnerDepartment", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_OwnerDepartmentAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.GetECLikeSetting_OwnerDepartmentAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_OwnerDepartmentAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.GetECLikeSetting_OwnerDepartmentOperationCompleted == null)) {
+                this.GetECLikeSetting_OwnerDepartmentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetECLikeSetting_OwnerDepartmentOperationCompleted);
+            }
+            this.InvokeAsync("GetECLikeSetting_OwnerDepartment", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.GetECLikeSetting_OwnerDepartmentOperationCompleted, userState);
+        }
+        
+        private void OnGetECLikeSetting_OwnerDepartmentOperationCompleted(object arg) {
+            if ((this.GetECLikeSetting_OwnerDepartmentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetECLikeSetting_OwnerDepartmentCompleted(this, new GetECLikeSetting_OwnerDepartmentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ECLikeAllowSkip", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ECLikeAllowSkip(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("ECLikeAllowSkip", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ECLikeAllowSkipAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.ECLikeAllowSkipAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void ECLikeAllowSkipAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.ECLikeAllowSkipOperationCompleted == null)) {
+                this.ECLikeAllowSkipOperationCompleted = new System.Threading.SendOrPostCallback(this.OnECLikeAllowSkipOperationCompleted);
+            }
+            this.InvokeAsync("ECLikeAllowSkip", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.ECLikeAllowSkipOperationCompleted, userState);
+        }
+        
+        private void OnECLikeAllowSkipOperationCompleted(object arg) {
+            if ((this.ECLikeAllowSkipCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ECLikeAllowSkipCompleted(this, new ECLikeAllowSkipCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ECLikeCheckHaveSetting", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ECLikeCheckHaveSetting(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("ECLikeCheckHaveSetting", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ECLikeCheckHaveSettingAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.ECLikeCheckHaveSettingAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void ECLikeCheckHaveSettingAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.ECLikeCheckHaveSettingOperationCompleted == null)) {
+                this.ECLikeCheckHaveSettingOperationCompleted = new System.Threading.SendOrPostCallback(this.OnECLikeCheckHaveSettingOperationCompleted);
+            }
+            this.InvokeAsync("ECLikeCheckHaveSetting", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.ECLikeCheckHaveSettingOperationCompleted, userState);
+        }
+        
+        private void OnECLikeCheckHaveSettingOperationCompleted(object arg) {
+            if ((this.ECLikeCheckHaveSettingCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ECLikeCheckHaveSettingCompleted(this, new ECLikeCheckHaveSettingCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetECLikeSetting_IsHoldLot", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetECLikeSetting_IsHoldLot(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            object[] results = this.Invoke("GetECLikeSetting_IsHoldLot", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_IsHoldLotAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
+            this.GetECLikeSetting_IsHoldLotAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
+        }
+        
+        /// <remarks/>
+        public void GetECLikeSetting_IsHoldLotAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
+            if ((this.GetECLikeSetting_IsHoldLotOperationCompleted == null)) {
+                this.GetECLikeSetting_IsHoldLotOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetECLikeSetting_IsHoldLotOperationCompleted);
+            }
+            this.InvokeAsync("GetECLikeSetting_IsHoldLot", new object[] {
+                        LotNo,
+                        Resource,
+                        Recipe,
+                        FromSystem,
+                        OPBadgeID}, this.GetECLikeSetting_IsHoldLotOperationCompleted, userState);
+        }
+        
+        private void OnGetECLikeSetting_IsHoldLotOperationCompleted(object arg) {
+            if ((this.GetECLikeSetting_IsHoldLotCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetECLikeSetting_IsHoldLotCompleted(this, new GetECLikeSetting_IsHoldLotCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetDPTapingRecipe", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetDPTapingRecipe(string sLot) {
+            object[] results = this.Invoke("GetDPTapingRecipe", new object[] {
+                        sLot});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetDPTapingRecipeAsync(string sLot) {
+            this.GetDPTapingRecipeAsync(sLot, null);
+        }
+        
+        /// <remarks/>
+        public void GetDPTapingRecipeAsync(string sLot, object userState) {
+            if ((this.GetDPTapingRecipeOperationCompleted == null)) {
+                this.GetDPTapingRecipeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetDPTapingRecipeOperationCompleted);
+            }
+            this.InvokeAsync("GetDPTapingRecipe", new object[] {
+                        sLot}, this.GetDPTapingRecipeOperationCompleted, userState);
+        }
+        
+        private void OnGetDPTapingRecipeOperationCompleted(object arg) {
+            if ((this.GetDPTapingRecipeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetDPTapingRecipeCompleted(this, new GetDPTapingRecipeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetRecipeName", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -1318,6 +2159,35 @@ namespace WatchDog.WebReference {
             if ((this.GetQCLPNCodeBySiteCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetQCLPNCodeBySiteCompleted(this, new GetQCLPNCodeBySiteCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetRICHTEKLPNCode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GetRICHTEKLPNCode(string sType) {
+            object[] results = this.Invoke("GetRICHTEKLPNCode", new object[] {
+                        sType});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetRICHTEKLPNCodeAsync(string sType) {
+            this.GetRICHTEKLPNCodeAsync(sType, null);
+        }
+        
+        /// <remarks/>
+        public void GetRICHTEKLPNCodeAsync(string sType, object userState) {
+            if ((this.GetRICHTEKLPNCodeOperationCompleted == null)) {
+                this.GetRICHTEKLPNCodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetRICHTEKLPNCodeOperationCompleted);
+            }
+            this.InvokeAsync("GetRICHTEKLPNCode", new object[] {
+                        sType}, this.GetRICHTEKLPNCodeOperationCompleted, userState);
+        }
+        
+        private void OnGetRICHTEKLPNCodeOperationCompleted(object arg) {
+            if ((this.GetRICHTEKLPNCodeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetRICHTEKLPNCodeCompleted(this, new GetRICHTEKLPNCodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -2015,38 +2885,6 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateBlueToothTagRackLocationInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool UpdateBlueToothTagRackLocationInfo(string sXML, ref string sMessage) {
-            object[] results = this.Invoke("UpdateBlueToothTagRackLocationInfo", new object[] {
-                        sXML,
-                        sMessage});
-            sMessage = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void UpdateBlueToothTagRackLocationInfoAsync(string sXML, string sMessage) {
-            this.UpdateBlueToothTagRackLocationInfoAsync(sXML, sMessage, null);
-        }
-        
-        /// <remarks/>
-        public void UpdateBlueToothTagRackLocationInfoAsync(string sXML, string sMessage, object userState) {
-            if ((this.UpdateBlueToothTagRackLocationInfoOperationCompleted == null)) {
-                this.UpdateBlueToothTagRackLocationInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateBlueToothTagRackLocationInfoOperationCompleted);
-            }
-            this.InvokeAsync("UpdateBlueToothTagRackLocationInfo", new object[] {
-                        sXML,
-                        sMessage}, this.UpdateBlueToothTagRackLocationInfoOperationCompleted, userState);
-        }
-        
-        private void OnUpdateBlueToothTagRackLocationInfoOperationCompleted(object arg) {
-            if ((this.UpdateBlueToothTagRackLocationInfoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.UpdateBlueToothTagRackLocationInfoCompleted(this, new UpdateBlueToothTagRackLocationInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateBlutToothTagBaseInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public bool UpdateBlutToothTagBaseInfo(string sXML, ref string sMessage) {
             object[] results = this.Invoke("UpdateBlutToothTagBaseInfo", new object[] {
@@ -2075,6 +2913,102 @@ namespace WatchDog.WebReference {
             if ((this.UpdateBlutToothTagBaseInfoCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.UpdateBlutToothTagBaseInfoCompleted(this, new UpdateBlutToothTagBaseInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdateBlutToothTagBaseInfo4ServerDown", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool UpdateBlutToothTagBaseInfo4ServerDown(string sXML, ref string sMessage) {
+            object[] results = this.Invoke("UpdateBlutToothTagBaseInfo4ServerDown", new object[] {
+                        sXML,
+                        sMessage});
+            sMessage = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void UpdateBlutToothTagBaseInfo4ServerDownAsync(string sXML, string sMessage) {
+            this.UpdateBlutToothTagBaseInfo4ServerDownAsync(sXML, sMessage, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateBlutToothTagBaseInfo4ServerDownAsync(string sXML, string sMessage, object userState) {
+            if ((this.UpdateBlutToothTagBaseInfo4ServerDownOperationCompleted == null)) {
+                this.UpdateBlutToothTagBaseInfo4ServerDownOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateBlutToothTagBaseInfo4ServerDownOperationCompleted);
+            }
+            this.InvokeAsync("UpdateBlutToothTagBaseInfo4ServerDown", new object[] {
+                        sXML,
+                        sMessage}, this.UpdateBlutToothTagBaseInfo4ServerDownOperationCompleted, userState);
+        }
+        
+        private void OnUpdateBlutToothTagBaseInfo4ServerDownOperationCompleted(object arg) {
+            if ((this.UpdateBlutToothTagBaseInfo4ServerDownCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateBlutToothTagBaseInfo4ServerDownCompleted(this, new UpdateBlutToothTagBaseInfo4ServerDownCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DisassociateCarrierRelationByLot", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void DisassociateCarrierRelationByLot(string sContainerName, string sUsername) {
+            this.Invoke("DisassociateCarrierRelationByLot", new object[] {
+                        sContainerName,
+                        sUsername});
+        }
+        
+        /// <remarks/>
+        public void DisassociateCarrierRelationByLotAsync(string sContainerName, string sUsername) {
+            this.DisassociateCarrierRelationByLotAsync(sContainerName, sUsername, null);
+        }
+        
+        /// <remarks/>
+        public void DisassociateCarrierRelationByLotAsync(string sContainerName, string sUsername, object userState) {
+            if ((this.DisassociateCarrierRelationByLotOperationCompleted == null)) {
+                this.DisassociateCarrierRelationByLotOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDisassociateCarrierRelationByLotOperationCompleted);
+            }
+            this.InvokeAsync("DisassociateCarrierRelationByLot", new object[] {
+                        sContainerName,
+                        sUsername}, this.DisassociateCarrierRelationByLotOperationCompleted, userState);
+        }
+        
+        private void OnDisassociateCarrierRelationByLotOperationCompleted(object arg) {
+            if ((this.DisassociateCarrierRelationByLotCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DisassociateCarrierRelationByLotCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DisassociateCarrierRelationByTxnType", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void DisassociateCarrierRelationByTxnType(string sContainerName, string sOperation, string sTxnType, string sUsername) {
+            this.Invoke("DisassociateCarrierRelationByTxnType", new object[] {
+                        sContainerName,
+                        sOperation,
+                        sTxnType,
+                        sUsername});
+        }
+        
+        /// <remarks/>
+        public void DisassociateCarrierRelationByTxnTypeAsync(string sContainerName, string sOperation, string sTxnType, string sUsername) {
+            this.DisassociateCarrierRelationByTxnTypeAsync(sContainerName, sOperation, sTxnType, sUsername, null);
+        }
+        
+        /// <remarks/>
+        public void DisassociateCarrierRelationByTxnTypeAsync(string sContainerName, string sOperation, string sTxnType, string sUsername, object userState) {
+            if ((this.DisassociateCarrierRelationByTxnTypeOperationCompleted == null)) {
+                this.DisassociateCarrierRelationByTxnTypeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDisassociateCarrierRelationByTxnTypeOperationCompleted);
+            }
+            this.InvokeAsync("DisassociateCarrierRelationByTxnType", new object[] {
+                        sContainerName,
+                        sOperation,
+                        sTxnType,
+                        sUsername}, this.DisassociateCarrierRelationByTxnTypeOperationCompleted, userState);
+        }
+        
+        private void OnDisassociateCarrierRelationByTxnTypeOperationCompleted(object arg) {
+            if ((this.DisassociateCarrierRelationByTxnTypeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DisassociateCarrierRelationByTxnTypeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -2221,294 +3155,122 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckEECertification", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string CheckEECertification(string pEmployeeName, string pResourceName) {
-            object[] results = this.Invoke("CheckEECertification", new object[] {
-                        pEmployeeName,
-                        pResourceName});
-            return ((string)(results[0]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiAmkGroupHoldMaint", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void apiAmkGroupHoldMaint(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue) {
+            this.Invoke("apiAmkGroupHoldMaint", new object[] {
+                        sOper,
+                        sHoldReason,
+                        sHoldComments,
+                        iTriggerPoint,
+                        sAttField,
+                        sTargetValue});
         }
         
         /// <remarks/>
-        public void CheckEECertificationAsync(string pEmployeeName, string pResourceName) {
-            this.CheckEECertificationAsync(pEmployeeName, pResourceName, null);
+        public void apiAmkGroupHoldMaintAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue) {
+            this.apiAmkGroupHoldMaintAsync(sOper, sHoldReason, sHoldComments, iTriggerPoint, sAttField, sTargetValue, null);
         }
         
         /// <remarks/>
-        public void CheckEECertificationAsync(string pEmployeeName, string pResourceName, object userState) {
-            if ((this.CheckEECertificationOperationCompleted == null)) {
-                this.CheckEECertificationOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckEECertificationOperationCompleted);
+        public void apiAmkGroupHoldMaintAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, object userState) {
+            if ((this.apiAmkGroupHoldMaintOperationCompleted == null)) {
+                this.apiAmkGroupHoldMaintOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiAmkGroupHoldMaintOperationCompleted);
             }
-            this.InvokeAsync("CheckEECertification", new object[] {
-                        pEmployeeName,
-                        pResourceName}, this.CheckEECertificationOperationCompleted, userState);
+            this.InvokeAsync("apiAmkGroupHoldMaint", new object[] {
+                        sOper,
+                        sHoldReason,
+                        sHoldComments,
+                        iTriggerPoint,
+                        sAttField,
+                        sTargetValue}, this.apiAmkGroupHoldMaintOperationCompleted, userState);
         }
         
-        private void OnCheckEECertificationOperationCompleted(object arg) {
-            if ((this.CheckEECertificationCompleted != null)) {
+        private void OnapiAmkGroupHoldMaintOperationCompleted(object arg) {
+            if ((this.apiAmkGroupHoldMaintCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CheckEECertificationCompleted(this, new CheckEECertificationCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.apiAmkGroupHoldMaintCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetAMSCusLotNO_CusNameByUstLotNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetAMSCusLotNO_CusNameByUstLotNo(string UstLotNo, ref string sMsg) {
-            object[] results = this.Invoke("GetAMSCusLotNO_CusNameByUstLotNo", new object[] {
-                        UstLotNo,
-                        sMsg});
-            sMsg = ((string)(results[1]));
-            return ((System.Data.DataSet)(results[0]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiAmkGroupHoldMaintWithUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void apiAmkGroupHoldMaintWithUser(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword) {
+            this.Invoke("apiAmkGroupHoldMaintWithUser", new object[] {
+                        sOper,
+                        sHoldReason,
+                        sHoldComments,
+                        iTriggerPoint,
+                        sAttField,
+                        sTargetValue,
+                        sUserName,
+                        sPassword});
         }
         
         /// <remarks/>
-        public void GetAMSCusLotNO_CusNameByUstLotNoAsync(string UstLotNo, string sMsg) {
-            this.GetAMSCusLotNO_CusNameByUstLotNoAsync(UstLotNo, sMsg, null);
+        public void apiAmkGroupHoldMaintWithUserAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword) {
+            this.apiAmkGroupHoldMaintWithUserAsync(sOper, sHoldReason, sHoldComments, iTriggerPoint, sAttField, sTargetValue, sUserName, sPassword, null);
         }
         
         /// <remarks/>
-        public void GetAMSCusLotNO_CusNameByUstLotNoAsync(string UstLotNo, string sMsg, object userState) {
-            if ((this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted == null)) {
-                this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAMSCusLotNO_CusNameByUstLotNoOperationCompleted);
+        public void apiAmkGroupHoldMaintWithUserAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword, object userState) {
+            if ((this.apiAmkGroupHoldMaintWithUserOperationCompleted == null)) {
+                this.apiAmkGroupHoldMaintWithUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiAmkGroupHoldMaintWithUserOperationCompleted);
             }
-            this.InvokeAsync("GetAMSCusLotNO_CusNameByUstLotNo", new object[] {
-                        UstLotNo,
-                        sMsg}, this.GetAMSCusLotNO_CusNameByUstLotNoOperationCompleted, userState);
+            this.InvokeAsync("apiAmkGroupHoldMaintWithUser", new object[] {
+                        sOper,
+                        sHoldReason,
+                        sHoldComments,
+                        iTriggerPoint,
+                        sAttField,
+                        sTargetValue,
+                        sUserName,
+                        sPassword}, this.apiAmkGroupHoldMaintWithUserOperationCompleted, userState);
         }
         
-        private void OnGetAMSCusLotNO_CusNameByUstLotNoOperationCompleted(object arg) {
-            if ((this.GetAMSCusLotNO_CusNameByUstLotNoCompleted != null)) {
+        private void OnapiAmkGroupHoldMaintWithUserOperationCompleted(object arg) {
+            if ((this.apiAmkGroupHoldMaintWithUserCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetAMSCusLotNO_CusNameByUstLotNoCompleted(this, new GetAMSCusLotNO_CusNameByUstLotNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.apiAmkGroupHoldMaintWithUserCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/LotDispatch_API_ByAMSLotId", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool LotDispatch_API_ByAMSLotId(string sAMSLotId, ref string sMsg, string sComments, string sUserName) {
-            object[] results = this.Invoke("LotDispatch_API_ByAMSLotId", new object[] {
-                        sAMSLotId,
-                        sMsg,
-                        sComments,
-                        sUserName});
-            sMsg = ((string)(results[1]));
-            return ((bool)(results[0]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiUpdateResourceStatus", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void apiUpdateResourceStatus(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments) {
+            this.Invoke("apiUpdateResourceStatus", new object[] {
+                        sResource,
+                        iAvailability,
+                        sResourceStatusCode,
+                        sResourceStatusReason,
+                        sLot,
+                        sEmployee,
+                        sComments});
         }
         
         /// <remarks/>
-        public void LotDispatch_API_ByAMSLotIdAsync(string sAMSLotId, string sMsg, string sComments, string sUserName) {
-            this.LotDispatch_API_ByAMSLotIdAsync(sAMSLotId, sMsg, sComments, sUserName, null);
+        public void apiUpdateResourceStatusAsync(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments) {
+            this.apiUpdateResourceStatusAsync(sResource, iAvailability, sResourceStatusCode, sResourceStatusReason, sLot, sEmployee, sComments, null);
         }
         
         /// <remarks/>
-        public void LotDispatch_API_ByAMSLotIdAsync(string sAMSLotId, string sMsg, string sComments, string sUserName, object userState) {
-            if ((this.LotDispatch_API_ByAMSLotIdOperationCompleted == null)) {
-                this.LotDispatch_API_ByAMSLotIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLotDispatch_API_ByAMSLotIdOperationCompleted);
+        public void apiUpdateResourceStatusAsync(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments, object userState) {
+            if ((this.apiUpdateResourceStatusOperationCompleted == null)) {
+                this.apiUpdateResourceStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiUpdateResourceStatusOperationCompleted);
             }
-            this.InvokeAsync("LotDispatch_API_ByAMSLotId", new object[] {
-                        sAMSLotId,
-                        sMsg,
-                        sComments,
-                        sUserName}, this.LotDispatch_API_ByAMSLotIdOperationCompleted, userState);
+            this.InvokeAsync("apiUpdateResourceStatus", new object[] {
+                        sResource,
+                        iAvailability,
+                        sResourceStatusCode,
+                        sResourceStatusReason,
+                        sLot,
+                        sEmployee,
+                        sComments}, this.apiUpdateResourceStatusOperationCompleted, userState);
         }
         
-        private void OnLotDispatch_API_ByAMSLotIdOperationCompleted(object arg) {
-            if ((this.LotDispatch_API_ByAMSLotIdCompleted != null)) {
+        private void OnapiUpdateResourceStatusOperationCompleted(object arg) {
+            if ((this.apiUpdateResourceStatusCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.LotDispatch_API_ByAMSLotIdCompleted(this, new LotDispatch_API_ByAMSLotIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ChangeAMSLotAttribute", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ChangeAMSLotAttribute(string sAMSLotId, string sAttributeName, string sAttributeValue, ref string sMsg) {
-            object[] results = this.Invoke("ChangeAMSLotAttribute", new object[] {
-                        sAMSLotId,
-                        sAttributeName,
-                        sAttributeValue,
-                        sMsg});
-            sMsg = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ChangeAMSLotAttributeAsync(string sAMSLotId, string sAttributeName, string sAttributeValue, string sMsg) {
-            this.ChangeAMSLotAttributeAsync(sAMSLotId, sAttributeName, sAttributeValue, sMsg, null);
-        }
-        
-        /// <remarks/>
-        public void ChangeAMSLotAttributeAsync(string sAMSLotId, string sAttributeName, string sAttributeValue, string sMsg, object userState) {
-            if ((this.ChangeAMSLotAttributeOperationCompleted == null)) {
-                this.ChangeAMSLotAttributeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnChangeAMSLotAttributeOperationCompleted);
-            }
-            this.InvokeAsync("ChangeAMSLotAttribute", new object[] {
-                        sAMSLotId,
-                        sAttributeName,
-                        sAttributeValue,
-                        sMsg}, this.ChangeAMSLotAttributeOperationCompleted, userState);
-        }
-        
-        private void OnChangeAMSLotAttributeOperationCompleted(object arg) {
-            if ((this.ChangeAMSLotAttributeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ChangeAMSLotAttributeCompleted(this, new ChangeAMSLotAttributeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetONSEMITestProgramsForBOM", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GetONSEMITestProgramsForBOM(string sDevice, string sTester) {
-            object[] results = this.Invoke("GetONSEMITestProgramsForBOM", new object[] {
-                        sDevice,
-                        sTester});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetONSEMITestProgramsForBOMAsync(string sDevice, string sTester) {
-            this.GetONSEMITestProgramsForBOMAsync(sDevice, sTester, null);
-        }
-        
-        /// <remarks/>
-        public void GetONSEMITestProgramsForBOMAsync(string sDevice, string sTester, object userState) {
-            if ((this.GetONSEMITestProgramsForBOMOperationCompleted == null)) {
-                this.GetONSEMITestProgramsForBOMOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetONSEMITestProgramsForBOMOperationCompleted);
-            }
-            this.InvokeAsync("GetONSEMITestProgramsForBOM", new object[] {
-                        sDevice,
-                        sTester}, this.GetONSEMITestProgramsForBOMOperationCompleted, userState);
-        }
-        
-        private void OnGetONSEMITestProgramsForBOMOperationCompleted(object arg) {
-            if ((this.GetONSEMITestProgramsForBOMCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetONSEMITestProgramsForBOMCompleted(this, new GetONSEMITestProgramsForBOMCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GenFCMaterialLabelInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GenFCMaterialLabelInfo(string sMaterialInfo) {
-            object[] results = this.Invoke("GenFCMaterialLabelInfo", new object[] {
-                        sMaterialInfo});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GenFCMaterialLabelInfoAsync(string sMaterialInfo) {
-            this.GenFCMaterialLabelInfoAsync(sMaterialInfo, null);
-        }
-        
-        /// <remarks/>
-        public void GenFCMaterialLabelInfoAsync(string sMaterialInfo, object userState) {
-            if ((this.GenFCMaterialLabelInfoOperationCompleted == null)) {
-                this.GenFCMaterialLabelInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGenFCMaterialLabelInfoOperationCompleted);
-            }
-            this.InvokeAsync("GenFCMaterialLabelInfo", new object[] {
-                        sMaterialInfo}, this.GenFCMaterialLabelInfoOperationCompleted, userState);
-        }
-        
-        private void OnGenFCMaterialLabelInfoOperationCompleted(object arg) {
-            if ((this.GenFCMaterialLabelInfoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GenFCMaterialLabelInfoCompleted(this, new GenFCMaterialLabelInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RCV_NotesCPBOM_Number", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string RCV_NotesCPBOM_Number(string CP_BOM_RequestNo, string TargetDevice, string TestProgram) {
-            object[] results = this.Invoke("RCV_NotesCPBOM_Number", new object[] {
-                        CP_BOM_RequestNo,
-                        TargetDevice,
-                        TestProgram});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void RCV_NotesCPBOM_NumberAsync(string CP_BOM_RequestNo, string TargetDevice, string TestProgram) {
-            this.RCV_NotesCPBOM_NumberAsync(CP_BOM_RequestNo, TargetDevice, TestProgram, null);
-        }
-        
-        /// <remarks/>
-        public void RCV_NotesCPBOM_NumberAsync(string CP_BOM_RequestNo, string TargetDevice, string TestProgram, object userState) {
-            if ((this.RCV_NotesCPBOM_NumberOperationCompleted == null)) {
-                this.RCV_NotesCPBOM_NumberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRCV_NotesCPBOM_NumberOperationCompleted);
-            }
-            this.InvokeAsync("RCV_NotesCPBOM_Number", new object[] {
-                        CP_BOM_RequestNo,
-                        TargetDevice,
-                        TestProgram}, this.RCV_NotesCPBOM_NumberOperationCompleted, userState);
-        }
-        
-        private void OnRCV_NotesCPBOM_NumberOperationCompleted(object arg) {
-            if ((this.RCV_NotesCPBOM_NumberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.RCV_NotesCPBOM_NumberCompleted(this, new RCV_NotesCPBOM_NumberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RCV_NotesPCN_Number", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string RCV_NotesPCN_Number(string CP_PCN_RequestNo, string SpecNo, string CreateDate) {
-            object[] results = this.Invoke("RCV_NotesPCN_Number", new object[] {
-                        CP_PCN_RequestNo,
-                        SpecNo,
-                        CreateDate});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void RCV_NotesPCN_NumberAsync(string CP_PCN_RequestNo, string SpecNo, string CreateDate) {
-            this.RCV_NotesPCN_NumberAsync(CP_PCN_RequestNo, SpecNo, CreateDate, null);
-        }
-        
-        /// <remarks/>
-        public void RCV_NotesPCN_NumberAsync(string CP_PCN_RequestNo, string SpecNo, string CreateDate, object userState) {
-            if ((this.RCV_NotesPCN_NumberOperationCompleted == null)) {
-                this.RCV_NotesPCN_NumberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRCV_NotesPCN_NumberOperationCompleted);
-            }
-            this.InvokeAsync("RCV_NotesPCN_Number", new object[] {
-                        CP_PCN_RequestNo,
-                        SpecNo,
-                        CreateDate}, this.RCV_NotesPCN_NumberOperationCompleted, userState);
-        }
-        
-        private void OnRCV_NotesPCN_NumberOperationCompleted(object arg) {
-            if ((this.RCV_NotesPCN_NumberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.RCV_NotesPCN_NumberCompleted(this, new RCV_NotesPCN_NumberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ToGet_TestProgram_EffectiveDate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string ToGet_TestProgram_EffectiveDate(string TargetDevice, string Old_TestProgram) {
-            object[] results = this.Invoke("ToGet_TestProgram_EffectiveDate", new object[] {
-                        TargetDevice,
-                        Old_TestProgram});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ToGet_TestProgram_EffectiveDateAsync(string TargetDevice, string Old_TestProgram) {
-            this.ToGet_TestProgram_EffectiveDateAsync(TargetDevice, Old_TestProgram, null);
-        }
-        
-        /// <remarks/>
-        public void ToGet_TestProgram_EffectiveDateAsync(string TargetDevice, string Old_TestProgram, object userState) {
-            if ((this.ToGet_TestProgram_EffectiveDateOperationCompleted == null)) {
-                this.ToGet_TestProgram_EffectiveDateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnToGet_TestProgram_EffectiveDateOperationCompleted);
-            }
-            this.InvokeAsync("ToGet_TestProgram_EffectiveDate", new object[] {
-                        TargetDevice,
-                        Old_TestProgram}, this.ToGet_TestProgram_EffectiveDateOperationCompleted, userState);
-        }
-        
-        private void OnToGet_TestProgram_EffectiveDateOperationCompleted(object arg) {
-            if ((this.ToGet_TestProgram_EffectiveDateCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ToGet_TestProgram_EffectiveDateCompleted(this, new ToGet_TestProgram_EffectiveDateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.apiUpdateResourceStatusCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -3412,6 +4174,70 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AMS_PI_IsPMBeforeRtnToMFG", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool AMS_PI_IsPMBeforeRtnToMFG(string MC) {
+            object[] results = this.Invoke("AMS_PI_IsPMBeforeRtnToMFG", new object[] {
+                        MC});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AMS_PI_IsPMBeforeRtnToMFGAsync(string MC) {
+            this.AMS_PI_IsPMBeforeRtnToMFGAsync(MC, null);
+        }
+        
+        /// <remarks/>
+        public void AMS_PI_IsPMBeforeRtnToMFGAsync(string MC, object userState) {
+            if ((this.AMS_PI_IsPMBeforeRtnToMFGOperationCompleted == null)) {
+                this.AMS_PI_IsPMBeforeRtnToMFGOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAMS_PI_IsPMBeforeRtnToMFGOperationCompleted);
+            }
+            this.InvokeAsync("AMS_PI_IsPMBeforeRtnToMFG", new object[] {
+                        MC}, this.AMS_PI_IsPMBeforeRtnToMFGOperationCompleted, userState);
+        }
+        
+        private void OnAMS_PI_IsPMBeforeRtnToMFGOperationCompleted(object arg) {
+            if ((this.AMS_PI_IsPMBeforeRtnToMFGCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AMS_PI_IsPMBeforeRtnToMFGCompleted(this, new AMS_PI_IsPMBeforeRtnToMFGCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AMS_ShutdownMC", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string AMS_ShutdownMC(string RC, string MC, string Employee, string Comment) {
+            object[] results = this.Invoke("AMS_ShutdownMC", new object[] {
+                        RC,
+                        MC,
+                        Employee,
+                        Comment});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AMS_ShutdownMCAsync(string RC, string MC, string Employee, string Comment) {
+            this.AMS_ShutdownMCAsync(RC, MC, Employee, Comment, null);
+        }
+        
+        /// <remarks/>
+        public void AMS_ShutdownMCAsync(string RC, string MC, string Employee, string Comment, object userState) {
+            if ((this.AMS_ShutdownMCOperationCompleted == null)) {
+                this.AMS_ShutdownMCOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAMS_ShutdownMCOperationCompleted);
+            }
+            this.InvokeAsync("AMS_ShutdownMC", new object[] {
+                        RC,
+                        MC,
+                        Employee,
+                        Comment}, this.AMS_ShutdownMCOperationCompleted, userState);
+        }
+        
+        private void OnAMS_ShutdownMCOperationCompleted(object arg) {
+            if ((this.AMS_ShutdownMCCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AMS_ShutdownMCCompleted(this, new AMS_ShutdownMCCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/eCIMInfoToAMSPI", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string eCIMInfoToAMSPI(string MC, string RC) {
             object[] results = this.Invoke("eCIMInfoToAMSPI", new object[] {
@@ -4187,6 +5013,43 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GenAttributeNewValue_SAPInterface", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string GenAttributeNewValue_SAPInterface(string AttributeName, string inputSapDate, string inputSapTime, string inputSapStamp, string inputSapPONum) {
+            object[] results = this.Invoke("GenAttributeNewValue_SAPInterface", new object[] {
+                        AttributeName,
+                        inputSapDate,
+                        inputSapTime,
+                        inputSapStamp,
+                        inputSapPONum});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GenAttributeNewValue_SAPInterfaceAsync(string AttributeName, string inputSapDate, string inputSapTime, string inputSapStamp, string inputSapPONum) {
+            this.GenAttributeNewValue_SAPInterfaceAsync(AttributeName, inputSapDate, inputSapTime, inputSapStamp, inputSapPONum, null);
+        }
+        
+        /// <remarks/>
+        public void GenAttributeNewValue_SAPInterfaceAsync(string AttributeName, string inputSapDate, string inputSapTime, string inputSapStamp, string inputSapPONum, object userState) {
+            if ((this.GenAttributeNewValue_SAPInterfaceOperationCompleted == null)) {
+                this.GenAttributeNewValue_SAPInterfaceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGenAttributeNewValue_SAPInterfaceOperationCompleted);
+            }
+            this.InvokeAsync("GenAttributeNewValue_SAPInterface", new object[] {
+                        AttributeName,
+                        inputSapDate,
+                        inputSapTime,
+                        inputSapStamp,
+                        inputSapPONum}, this.GenAttributeNewValue_SAPInterfaceOperationCompleted, userState);
+        }
+        
+        private void OnGenAttributeNewValue_SAPInterfaceOperationCompleted(object arg) {
+            if ((this.GenAttributeNewValue_SAPInterfaceCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GenAttributeNewValue_SAPInterfaceCompleted(this, new GenAttributeNewValue_SAPInterfaceCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPSMData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public System.Data.DataSet GetPSMData(string Tracking_ID) {
             object[] results = this.Invoke("GetPSMData", new object[] {
@@ -4245,286 +5108,47 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPSMData_MaskIDList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GetPSMData_MaskIDList(string sTrackingID) {
-            object[] results = this.Invoke("GetPSMData_MaskIDList", new object[] {
-                        sTrackingID});
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VMM_SendToEasyFlow", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string VMM_SendToEasyFlow(string sUserID, string sLine, string sCustCode, string sCustName, string sOperName, string sDeviceFamily, string sTargetDevice, string sBeforeData, string sAfterData) {
+            object[] results = this.Invoke("VMM_SendToEasyFlow", new object[] {
+                        sUserID,
+                        sLine,
+                        sCustCode,
+                        sCustName,
+                        sOperName,
+                        sDeviceFamily,
+                        sTargetDevice,
+                        sBeforeData,
+                        sAfterData});
             return ((string)(results[0]));
         }
         
         /// <remarks/>
-        public void GetPSMData_MaskIDListAsync(string sTrackingID) {
-            this.GetPSMData_MaskIDListAsync(sTrackingID, null);
+        public void VMM_SendToEasyFlowAsync(string sUserID, string sLine, string sCustCode, string sCustName, string sOperName, string sDeviceFamily, string sTargetDevice, string sBeforeData, string sAfterData) {
+            this.VMM_SendToEasyFlowAsync(sUserID, sLine, sCustCode, sCustName, sOperName, sDeviceFamily, sTargetDevice, sBeforeData, sAfterData, null);
         }
         
         /// <remarks/>
-        public void GetPSMData_MaskIDListAsync(string sTrackingID, object userState) {
-            if ((this.GetPSMData_MaskIDListOperationCompleted == null)) {
-                this.GetPSMData_MaskIDListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPSMData_MaskIDListOperationCompleted);
+        public void VMM_SendToEasyFlowAsync(string sUserID, string sLine, string sCustCode, string sCustName, string sOperName, string sDeviceFamily, string sTargetDevice, string sBeforeData, string sAfterData, object userState) {
+            if ((this.VMM_SendToEasyFlowOperationCompleted == null)) {
+                this.VMM_SendToEasyFlowOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVMM_SendToEasyFlowOperationCompleted);
             }
-            this.InvokeAsync("GetPSMData_MaskIDList", new object[] {
-                        sTrackingID}, this.GetPSMData_MaskIDListOperationCompleted, userState);
+            this.InvokeAsync("VMM_SendToEasyFlow", new object[] {
+                        sUserID,
+                        sLine,
+                        sCustCode,
+                        sCustName,
+                        sOperName,
+                        sDeviceFamily,
+                        sTargetDevice,
+                        sBeforeData,
+                        sAfterData}, this.VMM_SendToEasyFlowOperationCompleted, userState);
         }
         
-        private void OnGetPSMData_MaskIDListOperationCompleted(object arg) {
-            if ((this.GetPSMData_MaskIDListCompleted != null)) {
+        private void OnVMM_SendToEasyFlowOperationCompleted(object arg) {
+            if ((this.VMM_SendToEasyFlowCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetPSMData_MaskIDListCompleted(this, new GetPSMData_MaskIDListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckResourceLogFile", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string CheckResourceLogFile(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            object[] results = this.Invoke("CheckResourceLogFile", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CheckResourceLogFileAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            this.CheckResourceLogFileAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
-        }
-        
-        /// <remarks/>
-        public void CheckResourceLogFileAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
-            if ((this.CheckResourceLogFileOperationCompleted == null)) {
-                this.CheckResourceLogFileOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckResourceLogFileOperationCompleted);
-            }
-            this.InvokeAsync("CheckResourceLogFile", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID}, this.CheckResourceLogFileOperationCompleted, userState);
-        }
-        
-        private void OnCheckResourceLogFileOperationCompleted(object arg) {
-            if ((this.CheckResourceLogFileCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CheckResourceLogFileCompleted(this, new CheckResourceLogFileCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckResourceLogFileForTest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string CheckResourceLogFileForTest(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime) {
-            object[] results = this.Invoke("CheckResourceLogFileForTest", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID,
-                        StartTime,
-                        EndTime});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CheckResourceLogFileForTestAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime) {
-            this.CheckResourceLogFileForTestAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, StartTime, EndTime, null);
-        }
-        
-        /// <remarks/>
-        public void CheckResourceLogFileForTestAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, string StartTime, string EndTime, object userState) {
-            if ((this.CheckResourceLogFileForTestOperationCompleted == null)) {
-                this.CheckResourceLogFileForTestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckResourceLogFileForTestOperationCompleted);
-            }
-            this.InvokeAsync("CheckResourceLogFileForTest", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID,
-                        StartTime,
-                        EndTime}, this.CheckResourceLogFileForTestOperationCompleted, userState);
-        }
-        
-        private void OnCheckResourceLogFileForTestOperationCompleted(object arg) {
-            if ((this.CheckResourceLogFileForTestCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CheckResourceLogFileForTestCompleted(this, new CheckResourceLogFileForTestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetECLikeSetting_HoldReason", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GetECLikeSetting_HoldReason(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            object[] results = this.Invoke("GetECLikeSetting_HoldReason", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetECLikeSetting_HoldReasonAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            this.GetECLikeSetting_HoldReasonAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
-        }
-        
-        /// <remarks/>
-        public void GetECLikeSetting_HoldReasonAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
-            if ((this.GetECLikeSetting_HoldReasonOperationCompleted == null)) {
-                this.GetECLikeSetting_HoldReasonOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetECLikeSetting_HoldReasonOperationCompleted);
-            }
-            this.InvokeAsync("GetECLikeSetting_HoldReason", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID}, this.GetECLikeSetting_HoldReasonOperationCompleted, userState);
-        }
-        
-        private void OnGetECLikeSetting_HoldReasonOperationCompleted(object arg) {
-            if ((this.GetECLikeSetting_HoldReasonCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetECLikeSetting_HoldReasonCompleted(this, new GetECLikeSetting_HoldReasonCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetECLikeSetting_OwnerDepartment", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GetECLikeSetting_OwnerDepartment(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            object[] results = this.Invoke("GetECLikeSetting_OwnerDepartment", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetECLikeSetting_OwnerDepartmentAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            this.GetECLikeSetting_OwnerDepartmentAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
-        }
-        
-        /// <remarks/>
-        public void GetECLikeSetting_OwnerDepartmentAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
-            if ((this.GetECLikeSetting_OwnerDepartmentOperationCompleted == null)) {
-                this.GetECLikeSetting_OwnerDepartmentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetECLikeSetting_OwnerDepartmentOperationCompleted);
-            }
-            this.InvokeAsync("GetECLikeSetting_OwnerDepartment", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID}, this.GetECLikeSetting_OwnerDepartmentOperationCompleted, userState);
-        }
-        
-        private void OnGetECLikeSetting_OwnerDepartmentOperationCompleted(object arg) {
-            if ((this.GetECLikeSetting_OwnerDepartmentCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetECLikeSetting_OwnerDepartmentCompleted(this, new GetECLikeSetting_OwnerDepartmentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ECLikeAllowSkip", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ECLikeAllowSkip(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            object[] results = this.Invoke("ECLikeAllowSkip", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ECLikeAllowSkipAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            this.ECLikeAllowSkipAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
-        }
-        
-        /// <remarks/>
-        public void ECLikeAllowSkipAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
-            if ((this.ECLikeAllowSkipOperationCompleted == null)) {
-                this.ECLikeAllowSkipOperationCompleted = new System.Threading.SendOrPostCallback(this.OnECLikeAllowSkipOperationCompleted);
-            }
-            this.InvokeAsync("ECLikeAllowSkip", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID}, this.ECLikeAllowSkipOperationCompleted, userState);
-        }
-        
-        private void OnECLikeAllowSkipOperationCompleted(object arg) {
-            if ((this.ECLikeAllowSkipCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ECLikeAllowSkipCompleted(this, new ECLikeAllowSkipCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ECLikeCheckHaveSetting", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ECLikeCheckHaveSetting(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            object[] results = this.Invoke("ECLikeCheckHaveSetting", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ECLikeCheckHaveSettingAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID) {
-            this.ECLikeCheckHaveSettingAsync(LotNo, Resource, Recipe, FromSystem, OPBadgeID, null);
-        }
-        
-        /// <remarks/>
-        public void ECLikeCheckHaveSettingAsync(string LotNo, string Resource, string Recipe, string FromSystem, string OPBadgeID, object userState) {
-            if ((this.ECLikeCheckHaveSettingOperationCompleted == null)) {
-                this.ECLikeCheckHaveSettingOperationCompleted = new System.Threading.SendOrPostCallback(this.OnECLikeCheckHaveSettingOperationCompleted);
-            }
-            this.InvokeAsync("ECLikeCheckHaveSetting", new object[] {
-                        LotNo,
-                        Resource,
-                        Recipe,
-                        FromSystem,
-                        OPBadgeID}, this.ECLikeCheckHaveSettingOperationCompleted, userState);
-        }
-        
-        private void OnECLikeCheckHaveSettingOperationCompleted(object arg) {
-            if ((this.ECLikeCheckHaveSettingCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ECLikeCheckHaveSettingCompleted(this, new ECLikeCheckHaveSettingCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetDPTapingRecipe", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string GetDPTapingRecipe(string sLot) {
-            object[] results = this.Invoke("GetDPTapingRecipe", new object[] {
-                        sLot});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetDPTapingRecipeAsync(string sLot) {
-            this.GetDPTapingRecipeAsync(sLot, null);
-        }
-        
-        /// <remarks/>
-        public void GetDPTapingRecipeAsync(string sLot, object userState) {
-            if ((this.GetDPTapingRecipeOperationCompleted == null)) {
-                this.GetDPTapingRecipeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetDPTapingRecipeOperationCompleted);
-            }
-            this.InvokeAsync("GetDPTapingRecipe", new object[] {
-                        sLot}, this.GetDPTapingRecipeOperationCompleted, userState);
-        }
-        
-        private void OnGetDPTapingRecipeOperationCompleted(object arg) {
-            if ((this.GetDPTapingRecipeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetDPTapingRecipeCompleted(this, new GetDPTapingRecipeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.VMM_SendToEasyFlowCompleted(this, new VMM_SendToEasyFlowCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -6400,126 +7024,6 @@ namespace WatchDog.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiAmkGroupHoldMaint", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void apiAmkGroupHoldMaint(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue) {
-            this.Invoke("apiAmkGroupHoldMaint", new object[] {
-                        sOper,
-                        sHoldReason,
-                        sHoldComments,
-                        iTriggerPoint,
-                        sAttField,
-                        sTargetValue});
-        }
-        
-        /// <remarks/>
-        public void apiAmkGroupHoldMaintAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue) {
-            this.apiAmkGroupHoldMaintAsync(sOper, sHoldReason, sHoldComments, iTriggerPoint, sAttField, sTargetValue, null);
-        }
-        
-        /// <remarks/>
-        public void apiAmkGroupHoldMaintAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, object userState) {
-            if ((this.apiAmkGroupHoldMaintOperationCompleted == null)) {
-                this.apiAmkGroupHoldMaintOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiAmkGroupHoldMaintOperationCompleted);
-            }
-            this.InvokeAsync("apiAmkGroupHoldMaint", new object[] {
-                        sOper,
-                        sHoldReason,
-                        sHoldComments,
-                        iTriggerPoint,
-                        sAttField,
-                        sTargetValue}, this.apiAmkGroupHoldMaintOperationCompleted, userState);
-        }
-        
-        private void OnapiAmkGroupHoldMaintOperationCompleted(object arg) {
-            if ((this.apiAmkGroupHoldMaintCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.apiAmkGroupHoldMaintCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiAmkGroupHoldMaintWithUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void apiAmkGroupHoldMaintWithUser(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword) {
-            this.Invoke("apiAmkGroupHoldMaintWithUser", new object[] {
-                        sOper,
-                        sHoldReason,
-                        sHoldComments,
-                        iTriggerPoint,
-                        sAttField,
-                        sTargetValue,
-                        sUserName,
-                        sPassword});
-        }
-        
-        /// <remarks/>
-        public void apiAmkGroupHoldMaintWithUserAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword) {
-            this.apiAmkGroupHoldMaintWithUserAsync(sOper, sHoldReason, sHoldComments, iTriggerPoint, sAttField, sTargetValue, sUserName, sPassword, null);
-        }
-        
-        /// <remarks/>
-        public void apiAmkGroupHoldMaintWithUserAsync(string sOper, string sHoldReason, string sHoldComments, int iTriggerPoint, string sAttField, string sTargetValue, string sUserName, string sPassword, object userState) {
-            if ((this.apiAmkGroupHoldMaintWithUserOperationCompleted == null)) {
-                this.apiAmkGroupHoldMaintWithUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiAmkGroupHoldMaintWithUserOperationCompleted);
-            }
-            this.InvokeAsync("apiAmkGroupHoldMaintWithUser", new object[] {
-                        sOper,
-                        sHoldReason,
-                        sHoldComments,
-                        iTriggerPoint,
-                        sAttField,
-                        sTargetValue,
-                        sUserName,
-                        sPassword}, this.apiAmkGroupHoldMaintWithUserOperationCompleted, userState);
-        }
-        
-        private void OnapiAmkGroupHoldMaintWithUserOperationCompleted(object arg) {
-            if ((this.apiAmkGroupHoldMaintWithUserCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.apiAmkGroupHoldMaintWithUserCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/apiUpdateResourceStatus", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void apiUpdateResourceStatus(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments) {
-            this.Invoke("apiUpdateResourceStatus", new object[] {
-                        sResource,
-                        iAvailability,
-                        sResourceStatusCode,
-                        sResourceStatusReason,
-                        sLot,
-                        sEmployee,
-                        sComments});
-        }
-        
-        /// <remarks/>
-        public void apiUpdateResourceStatusAsync(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments) {
-            this.apiUpdateResourceStatusAsync(sResource, iAvailability, sResourceStatusCode, sResourceStatusReason, sLot, sEmployee, sComments, null);
-        }
-        
-        /// <remarks/>
-        public void apiUpdateResourceStatusAsync(string sResource, int iAvailability, string sResourceStatusCode, string sResourceStatusReason, string sLot, string sEmployee, string sComments, object userState) {
-            if ((this.apiUpdateResourceStatusOperationCompleted == null)) {
-                this.apiUpdateResourceStatusOperationCompleted = new System.Threading.SendOrPostCallback(this.OnapiUpdateResourceStatusOperationCompleted);
-            }
-            this.InvokeAsync("apiUpdateResourceStatus", new object[] {
-                        sResource,
-                        iAvailability,
-                        sResourceStatusCode,
-                        sResourceStatusReason,
-                        sLot,
-                        sEmployee,
-                        sComments}, this.apiUpdateResourceStatusOperationCompleted, userState);
-        }
-        
-        private void OnapiUpdateResourceStatusOperationCompleted(object arg) {
-            if ((this.apiUpdateResourceStatusCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.apiUpdateResourceStatusCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -6539,1079 +7043,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetRecipeNameCompletedEventHandler(object sender, GetRecipeNameCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetRecipeNameCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetRecipeNameCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void RecordTestProgramForWSCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetOperInstrCompletedEventHandler(object sender, GetOperInstrCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOperInstrCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOperInstrCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetOperSIDCompletedEventHandler(object sender, GetOperSIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOperSIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOperSIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetOperSID_WithValidateCompletedEventHandler(object sender, GetOperSID_WithValidateCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOperSID_WithValidateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOperSID_WithValidateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetDPGRINDRecipeCompletedEventHandler(object sender, GetDPGRINDRecipeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDPGRINDRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDPGRINDRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void InsertRawDataCompletedEventHandler(object sender, InsertRawDataCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class InsertRawDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal InsertRawDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetDPPnPRecipeCompletedEventHandler(object sender, GetDPPnPRecipeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDPPnPRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDPPnPRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetDPPnPRecipeByParameterCompletedEventHandler(object sender, GetDPPnPRecipeByParameterCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDPPnPRecipeByParameterCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDPPnPRecipeByParameterCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetBSRecipeCompletedEventHandler(object sender, GetBSRecipeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBSRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBSRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetBSRecipeRuncardCompletedEventHandler(object sender, GetBSRecipeRuncardCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBSRecipeRuncardCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBSRecipeRuncardCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetQCLPNCodeCompletedEventHandler(object sender, GetQCLPNCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQCLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQCLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetQCLPNCodeBySiteCompletedEventHandler(object sender, GetQCLPNCodeBySiteCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQCLPNCodeBySiteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQCLPNCodeBySiteCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetMTKLPNCodeCompletedEventHandler(object sender, GetMTKLPNCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMTKLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMTKLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetAUDIENCELPNCodeCompletedEventHandler(object sender, GetAUDIENCELPNCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAUDIENCELPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAUDIENCELPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetSONYLPNCodeCompletedEventHandler(object sender, GetSONYLPNCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetSONYLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetSONYLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetLotAttributeFieldsCompletedEventHandler(object sender, GetLotAttributeFieldsCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetLotAttributeFieldsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetLotAttributeFieldsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void apiChangeAttributeCompletedEventHandler(object sender, apiChangeAttributeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class apiChangeAttributeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal apiChangeAttributeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GeneraterCustLotIDCompletedEventHandler(object sender, GeneraterCustLotIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GeneraterCustLotIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GeneraterCustLotIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GeneraterDateCodeCompletedEventHandler(object sender, GeneraterDateCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GeneraterDateCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GeneraterDateCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GeneraterTraceCodeCompletedEventHandler(object sender, GeneraterTraceCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GeneraterTraceCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GeneraterTraceCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GeneratorWaferIDWithCheckSumCompletedEventHandler(object sender, GeneratorWaferIDWithCheckSumCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GeneratorWaferIDWithCheckSumCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GeneratorWaferIDWithCheckSumCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GeneraterJsonFileCompletedEventHandler(object sender, GeneraterJsonFileCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GeneraterJsonFileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GeneraterJsonFileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void QARMS2_RecipeApplyCompletedEventHandler(object sender, QARMS2_RecipeApplyCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class QARMS2_RecipeApplyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal QARMS2_RecipeApplyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetBrcmDataForBomCompletedEventHandler(object sender, GetBrcmDataForBomCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBrcmDataForBomCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBrcmDataForBomCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ChkBrcmGatingRuleCompletedEventHandler(object sender, ChkBrcmGatingRuleCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChkBrcmGatingRuleCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChkBrcmGatingRuleCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ChkBrcmProdEngCompletedEventHandler(object sender, ChkBrcmProdEngCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChkBrcmProdEngCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChkBrcmProdEngCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ChkBrcmTestProgramWhenASISCreateSICompletedEventHandler(object sender, ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ChkBrcmASISEndorseRuleCompletedEventHandler(object sender, ChkBrcmASISEndorseRuleCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChkBrcmASISEndorseRuleCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChkBrcmASISEndorseRuleCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetBrcmSkipBinListForBomCompletedEventHandler(object sender, GetBrcmSkipBinListForBomCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBrcmSkipBinListForBomCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBrcmSkipBinListForBomCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void CheckSourceDevice_GF_BumpCompletedEventHandler(object sender, CheckSourceDevice_GF_BumpCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckSourceDevice_GF_BumpCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckSourceDevice_GF_BumpCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetFoupCleanStatusFromPCServerCompletedEventHandler(object sender, GetFoupCleanStatusFromPCServerCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetFoupCleanStatusFromPCServerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetFoupCleanStatusFromPCServerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void PCSERVERDBQueryCompletedEventHandler(object sender, PCSERVERDBQueryCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class PCSERVERDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal PCSERVERDBQueryCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void OperatorReviewMFGNotificationCompletedEventHandler(object sender, OperatorReviewMFGNotificationCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class OperatorReviewMFGNotificationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal OperatorReviewMFGNotificationCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetAMSLotInfoByBlueToothTagCompletedEventHandler(object sender, GetAMSLotInfoByBlueToothTagCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAMSLotInfoByBlueToothTagCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAMSLotInfoByBlueToothTagCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string sMessage {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void UpdateBlueToothTagRackLocationInfoCompletedEventHandler(object sender, UpdateBlueToothTagRackLocationInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateBlueToothTagRackLocationInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateBlueToothTagRackLocationInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string sMessage {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void UpdateBlutToothTagBaseInfoCompletedEventHandler(object sender, UpdateBlutToothTagBaseInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateBlutToothTagBaseInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateBlutToothTagBaseInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string sMessage {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetADIDPSMarkingSpecCompletedEventHandler(object sender, GetADIDPSMarkingSpecCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetADIDPSMarkingSpecCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetADIDPSMarkingSpecCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ExecAMSAPICompletedEventHandler(object sender, ExecAMSAPICompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExecAMSAPICompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExecAMSAPICompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetAMSAPI_DataStructureCompletedEventHandler(object sender, GetAMSAPI_DataStructureCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAMSAPI_DataStructureCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAMSAPI_DataStructureCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void CreateANFCompletedEventHandler(object sender, CreateANFCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateANFCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateANFCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckEECertificationCompletedEventHandler(object sender, CheckEECertificationCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckEECertificationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7633,11 +7069,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAMSCusLotNO_CusNameByUstLotNoCompletedEventHandler(object sender, GetAMSCusLotNO_CusNameByUstLotNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAMSCusLotNO_CusNameByUstLotNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7667,11 +7103,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotDispatch_API_ByAMSLotIdCompletedEventHandler(object sender, LotDispatch_API_ByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotDispatch_API_ByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7701,11 +7137,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ChangeAMSLotAttributeCompletedEventHandler(object sender, ChangeAMSLotAttributeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ChangeAMSLotAttributeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7735,11 +7171,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetONSEMITestProgramsForBOMCompletedEventHandler(object sender, GetONSEMITestProgramsForBOMCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetONSEMITestProgramsForBOMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7761,11 +7197,89 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void B2B_QORVO_USP_CHECKCompletedEventHandler(object sender, B2B_QORVO_USP_CHECKCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class B2B_QORVO_USP_CHECKCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal B2B_QORVO_USP_CHECKCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetNPIBulidPlanForAMSCompletedEventHandler(object sender, GetNPIBulidPlanForAMSCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetNPIBulidPlanForAMSCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetNPIBulidPlanForAMSCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetMCNDeviceCodeForNotesCompletedEventHandler(object sender, GetMCNDeviceCodeForNotesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMCNDeviceCodeForNotesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMCNDeviceCodeForNotesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GenFCMaterialLabelInfoCompletedEventHandler(object sender, GenFCMaterialLabelInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenFCMaterialLabelInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7787,11 +7301,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void RCV_NotesCPBOM_NumberCompletedEventHandler(object sender, RCV_NotesCPBOM_NumberCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RCV_NotesCPBOM_NumberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7813,11 +7327,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void RCV_NotesPCN_NumberCompletedEventHandler(object sender, RCV_NotesPCN_NumberCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RCV_NotesPCN_NumberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7839,11 +7353,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ToGet_TestProgram_EffectiveDateCompletedEventHandler(object sender, ToGet_TestProgram_EffectiveDateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ToGet_TestProgram_EffectiveDateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7865,11 +7379,1411 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetPSMData_MaskIDListCompletedEventHandler(object sender, GetPSMData_MaskIDListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPSMData_MaskIDListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPSMData_MaskIDListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetBladeRecipeCompletedEventHandler(object sender, GetBladeRecipeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBladeRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBladeRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void eCIMToMESAlarmCompletedEventHandler(object sender, eCIMToMESAlarmCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class eCIMToMESAlarmCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal eCIMToMESAlarmCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void CheckResourceLogFileCompletedEventHandler(object sender, CheckResourceLogFileCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckResourceLogFileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckResourceLogFileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void CheckResourceLogFileForTestCompletedEventHandler(object sender, CheckResourceLogFileForTestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckResourceLogFileForTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckResourceLogFileForTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetECLikeSetting_HoldReasonCompletedEventHandler(object sender, GetECLikeSetting_HoldReasonCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetECLikeSetting_HoldReasonCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetECLikeSetting_HoldReasonCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetECLikeSetting_OwnerDepartmentCompletedEventHandler(object sender, GetECLikeSetting_OwnerDepartmentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetECLikeSetting_OwnerDepartmentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetECLikeSetting_OwnerDepartmentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ECLikeAllowSkipCompletedEventHandler(object sender, ECLikeAllowSkipCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ECLikeAllowSkipCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ECLikeAllowSkipCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ECLikeCheckHaveSettingCompletedEventHandler(object sender, ECLikeCheckHaveSettingCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ECLikeCheckHaveSettingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ECLikeCheckHaveSettingCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetECLikeSetting_IsHoldLotCompletedEventHandler(object sender, GetECLikeSetting_IsHoldLotCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetECLikeSetting_IsHoldLotCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetECLikeSetting_IsHoldLotCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetDPTapingRecipeCompletedEventHandler(object sender, GetDPTapingRecipeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDPTapingRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDPTapingRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetRecipeNameCompletedEventHandler(object sender, GetRecipeNameCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetRecipeNameCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetRecipeNameCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void RecordTestProgramForWSCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetOperInstrCompletedEventHandler(object sender, GetOperInstrCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOperInstrCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOperInstrCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetOperSIDCompletedEventHandler(object sender, GetOperSIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOperSIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOperSIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetOperSID_WithValidateCompletedEventHandler(object sender, GetOperSID_WithValidateCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOperSID_WithValidateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOperSID_WithValidateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetDPGRINDRecipeCompletedEventHandler(object sender, GetDPGRINDRecipeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDPGRINDRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDPGRINDRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void InsertRawDataCompletedEventHandler(object sender, InsertRawDataCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InsertRawDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InsertRawDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetDPPnPRecipeCompletedEventHandler(object sender, GetDPPnPRecipeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDPPnPRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDPPnPRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetDPPnPRecipeByParameterCompletedEventHandler(object sender, GetDPPnPRecipeByParameterCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDPPnPRecipeByParameterCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDPPnPRecipeByParameterCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetBSRecipeCompletedEventHandler(object sender, GetBSRecipeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBSRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBSRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetBSRecipeRuncardCompletedEventHandler(object sender, GetBSRecipeRuncardCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBSRecipeRuncardCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBSRecipeRuncardCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetQCLPNCodeCompletedEventHandler(object sender, GetQCLPNCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQCLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQCLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetQCLPNCodeBySiteCompletedEventHandler(object sender, GetQCLPNCodeBySiteCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQCLPNCodeBySiteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQCLPNCodeBySiteCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetRICHTEKLPNCodeCompletedEventHandler(object sender, GetRICHTEKLPNCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetRICHTEKLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetRICHTEKLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetMTKLPNCodeCompletedEventHandler(object sender, GetMTKLPNCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMTKLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMTKLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetAUDIENCELPNCodeCompletedEventHandler(object sender, GetAUDIENCELPNCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAUDIENCELPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAUDIENCELPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetSONYLPNCodeCompletedEventHandler(object sender, GetSONYLPNCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetSONYLPNCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetSONYLPNCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetLotAttributeFieldsCompletedEventHandler(object sender, GetLotAttributeFieldsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetLotAttributeFieldsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetLotAttributeFieldsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void apiChangeAttributeCompletedEventHandler(object sender, apiChangeAttributeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class apiChangeAttributeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal apiChangeAttributeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GeneraterCustLotIDCompletedEventHandler(object sender, GeneraterCustLotIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GeneraterCustLotIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GeneraterCustLotIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GeneraterDateCodeCompletedEventHandler(object sender, GeneraterDateCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GeneraterDateCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GeneraterDateCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GeneraterTraceCodeCompletedEventHandler(object sender, GeneraterTraceCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GeneraterTraceCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GeneraterTraceCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GeneratorWaferIDWithCheckSumCompletedEventHandler(object sender, GeneratorWaferIDWithCheckSumCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GeneratorWaferIDWithCheckSumCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GeneratorWaferIDWithCheckSumCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GeneraterJsonFileCompletedEventHandler(object sender, GeneraterJsonFileCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GeneraterJsonFileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GeneraterJsonFileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void QARMS2_RecipeApplyCompletedEventHandler(object sender, QARMS2_RecipeApplyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class QARMS2_RecipeApplyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal QARMS2_RecipeApplyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetBrcmDataForBomCompletedEventHandler(object sender, GetBrcmDataForBomCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBrcmDataForBomCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBrcmDataForBomCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ChkBrcmGatingRuleCompletedEventHandler(object sender, ChkBrcmGatingRuleCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkBrcmGatingRuleCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkBrcmGatingRuleCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ChkBrcmProdEngCompletedEventHandler(object sender, ChkBrcmProdEngCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkBrcmProdEngCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkBrcmProdEngCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ChkBrcmTestProgramWhenASISCreateSICompletedEventHandler(object sender, ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkBrcmTestProgramWhenASISCreateSICompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ChkBrcmASISEndorseRuleCompletedEventHandler(object sender, ChkBrcmASISEndorseRuleCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkBrcmASISEndorseRuleCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkBrcmASISEndorseRuleCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetBrcmSkipBinListForBomCompletedEventHandler(object sender, GetBrcmSkipBinListForBomCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBrcmSkipBinListForBomCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBrcmSkipBinListForBomCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void CheckSourceDevice_GF_BumpCompletedEventHandler(object sender, CheckSourceDevice_GF_BumpCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckSourceDevice_GF_BumpCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckSourceDevice_GF_BumpCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetFoupCleanStatusFromPCServerCompletedEventHandler(object sender, GetFoupCleanStatusFromPCServerCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetFoupCleanStatusFromPCServerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetFoupCleanStatusFromPCServerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void PCSERVERDBQueryCompletedEventHandler(object sender, PCSERVERDBQueryCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PCSERVERDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PCSERVERDBQueryCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void OperatorReviewMFGNotificationCompletedEventHandler(object sender, OperatorReviewMFGNotificationCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class OperatorReviewMFGNotificationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal OperatorReviewMFGNotificationCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetAMSLotInfoByBlueToothTagCompletedEventHandler(object sender, GetAMSLotInfoByBlueToothTagCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAMSLotInfoByBlueToothTagCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAMSLotInfoByBlueToothTagCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string sMessage {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void UpdateBlutToothTagBaseInfoCompletedEventHandler(object sender, UpdateBlutToothTagBaseInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateBlutToothTagBaseInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateBlutToothTagBaseInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string sMessage {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void UpdateBlutToothTagBaseInfo4ServerDownCompletedEventHandler(object sender, UpdateBlutToothTagBaseInfo4ServerDownCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateBlutToothTagBaseInfo4ServerDownCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateBlutToothTagBaseInfo4ServerDownCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string sMessage {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void DisassociateCarrierRelationByLotCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void DisassociateCarrierRelationByTxnTypeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetADIDPSMarkingSpecCompletedEventHandler(object sender, GetADIDPSMarkingSpecCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetADIDPSMarkingSpecCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetADIDPSMarkingSpecCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void ExecAMSAPICompletedEventHandler(object sender, ExecAMSAPICompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExecAMSAPICompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExecAMSAPICompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GetAMSAPI_DataStructureCompletedEventHandler(object sender, GetAMSAPI_DataStructureCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAMSAPI_DataStructureCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAMSAPI_DataStructureCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void CreateANFCompletedEventHandler(object sender, CreateANFCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateANFCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateANFCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void apiAmkGroupHoldMaintCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void apiAmkGroupHoldMaintWithUserCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void apiUpdateResourceStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void apiQACompleteCompletedEventHandler(object sender, apiQACompleteCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class apiQACompleteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7891,11 +8805,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void apiChangeLotAttributeCompletedEventHandler(object sender, apiChangeLotAttributeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class apiChangeLotAttributeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7917,11 +8831,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void apiChangeLotAttribute2CompletedEventHandler(object sender, apiChangeLotAttribute2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class apiChangeLotAttribute2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7943,15 +8857,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CTM_UpdateCPToolBLOBCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CTM_GetCPToolBLOBCompletedEventHandler(object sender, CTM_GetCPToolBLOBCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CTM_GetCPToolBLOBCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -7973,15 +8887,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CTM_SendMailCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AES_GetWaferBinDataCompletedEventHandler(object sender, AES_GetWaferBinDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AES_GetWaferBinDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8003,15 +8917,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AES_UpdateFTPServerFolderCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AES_CheckSamplingLotCompletedEventHandler(object sender, AES_CheckSamplingLotCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AES_CheckSamplingLotCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8033,11 +8947,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetMultiLotAndWaferCountCompletedEventHandler(object sender, GetMultiLotAndWaferCountCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetMultiLotAndWaferCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8059,11 +8973,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void InlineStockDBQueryCompletedEventHandler(object sender, InlineStockDBQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InlineStockDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8085,11 +8999,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AESDBQueryCompletedEventHandler(object sender, AESDBQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AESDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8111,11 +9025,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LEGACYDBQueryCompletedEventHandler(object sender, LEGACYDBQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LEGACYDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8137,15 +9051,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void InlineStockMTSQLExecCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryForVBCompletedEventHandler(object sender, AMSDBQueryForVBCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryForVBCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8167,11 +9081,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryCompletedEventHandler(object sender, AMSDBQueryCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8209,11 +9123,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQuery1CompletedEventHandler(object sender, AMSDBQuery1CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQuery1CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8235,11 +9149,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQuery2CompletedEventHandler(object sender, AMSDBQuery2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQuery2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8261,11 +9175,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQuery3CompletedEventHandler(object sender, AMSDBQuery3CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQuery3CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8287,11 +9201,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQuery4CompletedEventHandler(object sender, AMSDBQuery4CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQuery4CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8313,19 +9227,19 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSMTSQLExecCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSMTSQLExecRPTCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryRPTCompletedEventHandler(object sender, AMSDBQueryRPTCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryRPTCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8347,11 +9261,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryRPT1CompletedEventHandler(object sender, AMSDBQueryRPT1CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryRPT1CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8373,11 +9287,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryRENCompletedEventHandler(object sender, AMSDBQueryRENCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryRENCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8399,15 +9313,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMS_UpdateBLOBCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMS_GetBLOBCompletedEventHandler(object sender, AMS_GetBLOBCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMS_GetBLOBCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8429,11 +9343,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AMSDBQueryWithExcelCompletedEventHandler(object sender, AMSDBQueryWithExcelCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AMSDBQueryWithExcelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8455,11 +9369,63 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AMS_PI_IsPMBeforeRtnToMFGCompletedEventHandler(object sender, AMS_PI_IsPMBeforeRtnToMFGCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AMS_PI_IsPMBeforeRtnToMFGCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AMS_PI_IsPMBeforeRtnToMFGCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void AMS_ShutdownMCCompletedEventHandler(object sender, AMS_ShutdownMCCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AMS_ShutdownMCCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AMS_ShutdownMCCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void eCIMInfoToAMSPICompletedEventHandler(object sender, eCIMInfoToAMSPICompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class eCIMInfoToAMSPICompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8481,11 +9447,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void QAOperationLotMoveCompletedEventHandler(object sender, QAOperationLotMoveCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QAOperationLotMoveCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8507,15 +9473,15 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void Check_FAIReportCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckMaskInStockByTrackingNoCompletedEventHandler(object sender, CheckMaskInStockByTrackingNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckMaskInStockByTrackingNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8545,11 +9511,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckMaskPhaseOutByTrackingNoCompletedEventHandler(object sender, CheckMaskPhaseOutByTrackingNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckMaskPhaseOutByTrackingNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8579,11 +9545,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetBomDataForAMSCompletedEventHandler(object sender, GetBomDataForAMSCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetBomDataForAMSCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8605,11 +9571,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetGFCustInputDataForAMSCompletedEventHandler(object sender, GetGFCustInputDataForAMSCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetGFCustInputDataForAMSCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8631,11 +9597,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotTxnValidationCompletedEventHandler(object sender, LotTxnValidationCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotTxnValidationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8657,11 +9623,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotTxnValidation2CompletedEventHandler(object sender, LotTxnValidation2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotTxnValidation2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8683,11 +9649,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetMultipleBinLotDataCompletedEventHandler(object sender, GetMultipleBinLotDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetMultipleBinLotDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8709,11 +9675,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void TnRCombineRuleCheckCompletedEventHandler(object sender, TnRCombineRuleCheckCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TnRCombineRuleCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8743,11 +9709,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void TnRCombineRuleCheckMsgCompletedEventHandler(object sender, TnRCombineRuleCheckMsgCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TnRCombineRuleCheckMsgCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8769,11 +9735,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void TnRCombineRuleGetByNameCompletedEventHandler(object sender, TnRCombineRuleGetByNameCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TnRCombineRuleGetByNameCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8795,11 +9761,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void TnRCombineRuleGetByLotCompletedEventHandler(object sender, TnRCombineRuleGetByLotCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TnRCombineRuleGetByLotCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8821,11 +9787,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void StringParserCompletedEventHandler(object sender, StringParserCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class StringParserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8847,11 +9813,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LowYieldCheckCompletedEventHandler(object sender, LowYieldCheckCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LowYieldCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8873,11 +9839,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LowYieldCheckXMLCompletedEventHandler(object sender, LowYieldCheckXMLCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LowYieldCheckXMLCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8899,11 +9865,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetReelAutoNumberCompletedEventHandler(object sender, GetReelAutoNumberCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetReelAutoNumberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8925,11 +9891,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckLotIsAllowedToOpenNowCompletedEventHandler(object sender, CheckLotIsAllowedToOpenNowCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckLotIsAllowedToOpenNowCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -8951,11 +9917,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void DieSorterEndorseCompletedEventHandler(object sender, DieSorterEndorseCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DieSorterEndorseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9009,11 +9975,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GenAttributeNewValueCompletedEventHandler(object sender, GenAttributeNewValueCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenAttributeNewValueCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9035,11 +10001,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GenAttributeNewValue3CompletedEventHandler(object sender, GenAttributeNewValue3CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenAttributeNewValue3CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9061,11 +10027,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GenAttributeNewValue2CompletedEventHandler(object sender, GenAttributeNewValue2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenAttributeNewValue2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9087,11 +10053,37 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void GenAttributeNewValue_SAPInterfaceCompletedEventHandler(object sender, GenAttributeNewValue_SAPInterfaceCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GenAttributeNewValue_SAPInterfaceCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GenAttributeNewValue_SAPInterfaceCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetPSMDataCompletedEventHandler(object sender, GetPSMDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetPSMDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9113,11 +10105,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetPSMData_ProductCustomerReqInfoCompletedEventHandler(object sender, GetPSMData_ProductCustomerReqInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetPSMData_ProductCustomerReqInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9139,18 +10131,18 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetPSMData_MaskIDListCompletedEventHandler(object sender, GetPSMData_MaskIDListCompletedEventArgs e);
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    public delegate void VMM_SendToEasyFlowCompletedEventHandler(object sender, VMM_SendToEasyFlowCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetPSMData_MaskIDListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class VMM_SendToEasyFlowCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        internal GetPSMData_MaskIDListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        internal VMM_SendToEasyFlowCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
@@ -9165,193 +10157,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void CheckResourceLogFileCompletedEventHandler(object sender, CheckResourceLogFileCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckResourceLogFileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckResourceLogFileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void CheckResourceLogFileForTestCompletedEventHandler(object sender, CheckResourceLogFileForTestCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckResourceLogFileForTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckResourceLogFileForTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetECLikeSetting_HoldReasonCompletedEventHandler(object sender, GetECLikeSetting_HoldReasonCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetECLikeSetting_HoldReasonCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetECLikeSetting_HoldReasonCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetECLikeSetting_OwnerDepartmentCompletedEventHandler(object sender, GetECLikeSetting_OwnerDepartmentCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetECLikeSetting_OwnerDepartmentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetECLikeSetting_OwnerDepartmentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ECLikeAllowSkipCompletedEventHandler(object sender, ECLikeAllowSkipCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ECLikeAllowSkipCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ECLikeAllowSkipCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void ECLikeCheckHaveSettingCompletedEventHandler(object sender, ECLikeCheckHaveSettingCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ECLikeCheckHaveSettingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ECLikeCheckHaveSettingCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void GetDPTapingRecipeCompletedEventHandler(object sender, GetDPTapingRecipeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDPTapingRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDPTapingRecipeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAMSServiceStatusCompletedEventHandler(object sender, GetAMSServiceStatusCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAMSServiceStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9373,19 +10183,19 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CreateFTDeviationReportCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CreateFTDeviationReportByStepCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetFTRTBinCompletedEventHandler(object sender, GetFTRTBinCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetFTRTBinCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9407,11 +10217,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckFTRTCommandCompletedEventHandler(object sender, CheckFTRTCommandCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckFTRTCommandCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9433,11 +10243,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetOperationByCustLotIdCompletedEventHandler(object sender, GetOperationByCustLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetOperationByCustLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9459,11 +10269,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetHandlerDataCompletedEventHandler(object sender, GetHandlerDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetHandlerDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9485,11 +10295,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAMSLotNoByWSLotNoCompletedEventHandler(object sender, GetAMSLotNoByWSLotNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAMSLotNoByWSLotNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9519,11 +10329,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetWSLotNoByAMSLotNoCompletedEventHandler(object sender, GetWSLotNoByAMSLotNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetWSLotNoByAMSLotNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9553,11 +10363,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetWaferListByCustLotId_EqualCompletedEventHandler(object sender, GetWaferListByCustLotId_EqualCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetWaferListByCustLotId_EqualCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9595,11 +10405,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetWaferListByCustLotId_LikeCompletedEventHandler(object sender, GetWaferListByCustLotId_LikeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetWaferListByCustLotId_LikeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9621,11 +10431,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetWaferListByAMSLotId_EqualCompletedEventHandler(object sender, GetWaferListByAMSLotId_EqualCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetWaferListByAMSLotId_EqualCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9663,11 +10473,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetWaferListByAMSLotId_LikeCompletedEventHandler(object sender, GetWaferListByAMSLotId_LikeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetWaferListByAMSLotId_LikeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9705,11 +10515,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAllSubLotByAMSLotIdCompletedEventHandler(object sender, GetAllSubLotByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAllSubLotByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9747,11 +10557,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetCustLotIDbyWaferIdCompletedEventHandler(object sender, GetCustLotIDbyWaferIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetCustLotIDbyWaferIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9789,11 +10599,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetMachineNameByAMSLotIdCompletedEventHandler(object sender, GetMachineNameByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetMachineNameByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9831,11 +10641,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAMSLotInfoCompletedEventHandler(object sender, GetAMSLotInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAMSLotInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9873,11 +10683,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetTIIASN_DSByBatchNumberCompletedEventHandler(object sender, GetTIIASN_DSByBatchNumberCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTIIASN_DSByBatchNumberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9915,11 +10725,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotHold_API_ByAMSLotIdCompletedEventHandler(object sender, LotHold_API_ByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotHold_API_ByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9949,11 +10759,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotHold_API_ByAMSLotIdwithUserCompletedEventHandler(object sender, LotHold_API_ByAMSLotIdwithUserCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotHold_API_ByAMSLotIdwithUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -9983,11 +10793,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotRelease_API_ByAMSLotIdCompletedEventHandler(object sender, LotRelease_API_ByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotRelease_API_ByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10017,11 +10827,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotRelease_API_ByAMSLotIdwithUserCompletedEventHandler(object sender, LotRelease_API_ByAMSLotIdwithUserCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotRelease_API_ByAMSLotIdwithUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10051,11 +10861,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotSplit_API_ByAMSLotIdCompletedEventHandler(object sender, LotSplit_API_ByAMSLotIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotSplit_API_ByAMSLotIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10085,11 +10895,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void LotRelease_API_ByAMSLotIdWithHoldCommentCompletedEventHandler(object sender, LotRelease_API_ByAMSLotIdWithHoldCommentCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LotRelease_API_ByAMSLotIdWithHoldCommentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10119,11 +10929,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateEDATAReplyStatusFor8HCompletedEventHandler(object sender, UpdateEDATAReplyStatusFor8HCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateEDATAReplyStatusFor8HCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10153,11 +10963,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateEDATAConvertStatusCompletedEventHandler(object sender, UpdateEDATAConvertStatusCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateEDATAConvertStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10187,11 +10997,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateEDATAConvertInfoCompletedEventHandler(object sender, UpdateEDATAConvertInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateEDATAConvertInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10221,11 +11031,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateEDATAUploadStatus2NullCompletedEventHandler(object sender, UpdateEDATAUploadStatus2NullCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateEDATAUploadStatus2NullCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10247,11 +11057,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateEDATAReplyStatusCompletedEventHandler(object sender, UpdateEDATAReplyStatusCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateEDATAReplyStatusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10273,11 +11083,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void EDataFrozenCompletedEventHandler(object sender, EDataFrozenCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EDataFrozenCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10299,11 +11109,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetEDC_Time_OperatorByTypeCompletedEventHandler(object sender, GetEDC_Time_OperatorByTypeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetEDC_Time_OperatorByTypeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10341,11 +11151,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetEDC_DataByTypeCompletedEventHandler(object sender, GetEDC_DataByTypeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetEDC_DataByTypeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10375,11 +11185,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateWaferDetailsCompletedEventHandler(object sender, UpdateWaferDetailsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateWaferDetailsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10409,11 +11219,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void UpdateWaferDetailsWithBinCompletedEventHandler(object sender, UpdateWaferDetailsWithBinCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdateWaferDetailsWithBinCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10435,11 +11245,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void EData_UPDWaferIDCompletedEventHandler(object sender, EData_UPDWaferIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EData_UPDWaferIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10469,11 +11279,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void EData_FQC_RPT_SuccessCompletedEventHandler(object sender, EData_FQC_RPT_SuccessCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EData_FQC_RPT_SuccessCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10503,11 +11313,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckBumpMapFilesAndFolderCompletedEventHandler(object sender, CheckBumpMapFilesAndFolderCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckBumpMapFilesAndFolderCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10537,11 +11347,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void RetrieveBumpMapCombineFilesCompletedEventHandler(object sender, RetrieveBumpMapCombineFilesCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RetrieveBumpMapCombineFilesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10563,11 +11373,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void CheckBumpMapSamplingCompletedEventHandler(object sender, CheckBumpMapSamplingCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckBumpMapSamplingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10589,11 +11399,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetF054_StdLogReportByLotCompletedEventHandler(object sender, GetF054_StdLogReportByLotCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetF054_StdLogReportByLotCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10615,11 +11425,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void AETC_RSC_StatusUpdateCompletedEventHandler(object sender, AETC_RSC_StatusUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AETC_RSC_StatusUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10641,11 +11451,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void PLAT_RSC_StatusUpdateCompletedEventHandler(object sender, PLAT_RSC_StatusUpdateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PLAT_RSC_StatusUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10667,11 +11477,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ATT_FC_FileTmpeMaintCompletedEventHandler(object sender, ATT_FC_FileTmpeMaintCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ATT_FC_FileTmpeMaintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10693,11 +11503,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ATT_FC_GetFileTmpeCompletedEventHandler(object sender, ATT_FC_GetFileTmpeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ATT_FC_GetFileTmpeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10719,11 +11529,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ATT_FC_GetRecipeCompletedEventHandler(object sender, ATT_FC_GetRecipeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ATT_FC_GetRecipeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10745,11 +11555,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ATT_FCGetSIDBYBDCompletedEventHandler(object sender, ATT_FCGetSIDBYBDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ATT_FCGetSIDBYBDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10771,11 +11581,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void VerifyDomainAccountCompletedEventHandler(object sender, VerifyDomainAccountCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VerifyDomainAccountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10797,11 +11607,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void VerifyDomainAccount2CompletedEventHandler(object sender, VerifyDomainAccount2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VerifyDomainAccount2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10831,11 +11641,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetDomainServerIPCompletedEventHandler(object sender, GetDomainServerIPCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDomainServerIPCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10857,11 +11667,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void ResetDomainPasswordCompletedEventHandler(object sender, ResetDomainPasswordCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ResetDomainPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10883,11 +11693,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetEnvInfoCompletedEventHandler(object sender, GetEnvInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetEnvInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10909,11 +11719,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAPIPCompletedEventHandler(object sender, GetAPIPCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAPIPCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10935,11 +11745,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAPUIDCompletedEventHandler(object sender, GetAPUIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAPUIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10961,11 +11771,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAPPWDCompletedEventHandler(object sender, GetAPPWDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAPPWDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -10987,11 +11797,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetAASIPCompletedEventHandler(object sender, GetAASIPCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAASIPCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -11013,11 +11823,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void GetTimeCompletedEventHandler(object sender, GetTimeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -11039,11 +11849,11 @@ namespace WatchDog.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     public delegate void apiResourceChangeStateCompletedEventHandler(object sender, apiResourceChangeStateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class apiResourceChangeStateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -11063,18 +11873,6 @@ namespace WatchDog.WebReference {
             }
         }
     }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void apiAmkGroupHoldMaintCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void apiAmkGroupHoldMaintWithUserCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3056.0")]
-    public delegate void apiUpdateResourceStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

@@ -40,10 +40,26 @@ namespace WatchDog
             }
             else
             {
+                Application.ThreadException += Application_ThreadException;
+                System.AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new Form1());
             }
         }
+        static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs e)
+        {
+            MessageBox.Show(e.ExceptionObject.ToString(), "Error");
+            Environment.Exit(1);
+        }
+        private static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        {
+            System.Diagnostics.Trace.WriteLine("Error" + e.Exception.Message + e.Exception.StackTrace);
+            MessageBox.Show(e.Exception.Message + e.Exception.StackTrace);
+        }
     }
+
+
+
+
 }

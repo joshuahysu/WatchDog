@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///D:/amkor/bridgeServerMSSQL_Amkor_180925/1116/bridgeServerMSSQL_Amkor/Web References/AMSWebService/AMSWebService.xml" filename="AMSWebService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://10.185.30.59/AMSWebService/AMSWebService.asmx?disco" filename="AMSWebService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://10.185.30.59/AMSWebService/AMSWebService.asmx?wsdl" filename="AMSWebService.wsdl" />
   </Results>
 </DiscoveryClientResultsFile>
