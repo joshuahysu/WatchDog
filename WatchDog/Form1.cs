@@ -40,6 +40,7 @@ namespace WatchDog
                     if (bool.Parse(System.Configuration.ConfigurationManager.AppSettings["IStrxOpen"]) && int.Parse(System.Configuration.ConfigurationManager.AppSettings["tryTimes"]) < tryTimes)//tryTimes次不成功後send trx
                     {
                         SendTrx();
+
                         SendEmail();
                     }
                     timer1.Stop();
@@ -60,15 +61,30 @@ namespace WatchDog
 
         private static void SendEmail()
         {
-            MailMessage mail = new MailMessage("BridgeServerMSSQL@watchdog.com", "user@hotmail.com");
-            SmtpClient client = new SmtpClient();
-            client.Port = 25;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Host = "smtp.gmail.com";
-            mail.Subject = "Bluetooth BridgeServerMSSQL Server down";
-            mail.Body = "Call IT to Restart Bluetooth BridgeServerMSSQL";
-            client.Send(mail);
+            try
+            {
+                var sendEmailAddress = System.Configuration.ConfigurationManager.AppSettings["sendEmailAddress"].ToString().Split(',');
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("InSiteAuto@Amkor.com");
+                foreach (var item in sendEmailAddress)
+                {
+                    mail.To.Add(item);
+                }
+                mail.Subject = "T5 eRack AP Server auto-restart fail";
+                mail.Body = "(This is system auto notice don't reply directly to this account) \n" +
+                    "T5 eRack AP Server IP: \n" +
+                    "Call IT to Restart Bluetooth BridgeServerMSSQL";
+                SmtpClient client = new SmtpClient();
+                client.Port = 25;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Host = "notes.amkor.com";
+                client.Send(mail);
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         /// <summary>
