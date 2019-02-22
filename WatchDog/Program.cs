@@ -19,7 +19,7 @@ namespace WatchDog
             var wi = WindowsIdentity.GetCurrent();
             var wp = new WindowsPrincipal(wi);
 
-            if (!wp.IsInRole(WindowsBuiltInRole.Administrator))
+            if (!wp.IsInRole(WindowsBuiltInRole.Administrator)&&bool.Parse(System.Configuration.ConfigurationManager.AppSettings["ISCloseProcess"]))
             {
                 var processInfo = new ProcessStartInfo();
                 // The following properties run the new process as administrator

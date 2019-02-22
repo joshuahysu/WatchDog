@@ -12,15 +12,22 @@ using System.Diagnostics;
 using System.Threading;
 using System.Net.Http;
 using System.Net.Mail;
+using System.Net;
 
 namespace WatchDog
 {
     public partial class Form1 : Form
     {
+       static bool webDown,DBDown,APDown = false;
 
         public Form1()
         {
             InitializeComponent();
+
+            APIP.Text += System.Configuration.ConfigurationManager.AppSettings["APServerIP"].ToString();
+            DBIP.Text += System.Configuration.ConfigurationManager.AppSettings["webServerIP"].ToString().Split('D')[0];
+            webIP.Text += System.Configuration.ConfigurationManager.AppSettings["webServerIP"].ToString().Split('D')[0];
+
         }
         int tryTimes = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -29,7 +36,7 @@ namespace WatchDog
             {
                 if (!isRunning())
                 {
-                    serverState.Text = "Server Stop";
+                    serverState.Text = "Server Down";
                     serverState.ForeColor = System.Drawing.Color.Red;
 
                     if (bool.Parse(System.Configuration.ConfigurationManager.AppSettings["ISCloseProcess"]))
@@ -40,26 +47,28 @@ namespace WatchDog
                     if (bool.Parse(System.Configuration.ConfigurationManager.AppSettings["IStrxOpen"]) && int.Parse(System.Configuration.ConfigurationManager.AppSettings["tryTimes"]) < tryTimes)//tryTimes次不成功後send trx
                     {
                         SendTrx();
-
+                    }
+                    if (bool.Parse(System.Configuration.ConfigurationManager.AppSettings["ISSendEmail"]) && int.Parse(System.Configuration.ConfigurationManager.AppSettings["tryTimes"]) < tryTimes)//tryTimes次不成功後send trx
+                    {
                         SendEmail();
                     }
-                    timer1.Stop();
+
                 }
                 else
                 {
                     serverState.Text = "Server Running";
-                    serverState.ForeColor = System.Drawing.Color.Black;
+                    serverState.ForeColor = System.Drawing.Color.Green;
                 }
             }
             catch (Exception ex)
             {
                 timer1.Stop();
-                errorCode.Text = ex.StackTrace;
+                errorCode.Text = ex.ToString();
                 //throw;
             }
         }
 
-        private static void SendEmail()
+        private void SendEmail()
         {
             try
             {
@@ -71,14 +80,29 @@ namespace WatchDog
                     mail.To.Add(item);
                 }
                 mail.Subject = "T5 eRack AP Server auto-restart fail";
-                mail.Body = "(This is system auto notice don't reply directly to this account) \n" +
-                    "T5 eRack AP Server IP: \n" +
-                    "Call IT to Restart Bluetooth BridgeServerMSSQL";
-                SmtpClient client = new SmtpClient();
-                client.Port = 25;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Host = "notes.amkor.com";
+                mail.Body = "(This is system auto notice don't reply directly to this account) \n";
+
+                if (APDown)
+                {
+                    mail.Body +="T5 eRack AP Server IP:" +
+                    System.Configuration.ConfigurationManager.AppSettings["APServerIP"].ToString()
+                    + " \n" +
+                    "Call IT to Restart Bluetooth BridgeServerMSSQL \n";
+                }
+                    //var client = new SmtpClient("smtp.gmail.com", 587)//port 587
+                mail.Body +=webDown?"web Down please restart IP:"+webIP.Text+" \n":"";
+
+                mail.Body += DBDown ? "DB Down please restart IP:" + webIP.Text+" \n": "";
+
+
+                var client = new SmtpClient("notes.amkor.com", 25)
+                {
+                    //EnableSsl = true,
+                    DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    // Credentials = new NetworkCredential("happyworkertwn@gmail.com", "5iTaiwan")
+                };
+
                 client.Send(mail);
             }
             catch
@@ -94,6 +118,7 @@ namespace WatchDog
         {
             try
             {
+                timer1.Stop();
                 var arr = "";
                 var AMSWebService = new AMSWebService();
                 string message = $"<TagBaseInfoRoot><ProcessType>ServerDown</ProcessType><ProcessItem>T5 Bump,OFFLINE,exit,{DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff")}</ProcessItem></TagBaseInfoRoot>";
@@ -135,6 +160,7 @@ namespace WatchDog
                 Thread.Sleep(1000);
                 var myProp = new Process();
                 myProp.StartInfo.FileName = System.Configuration.ConfigurationManager.AppSettings["appLocation"];
+                timer1.Stop();
                 myProp.Start();
                 tryTimes = 0;
             }
@@ -143,6 +169,11 @@ namespace WatchDog
                 errorCode.Text = ex.ToString();
                 tryTimes++;
             }
+            finally
+            {
+                timer1.Start();
+            }
+            timer1.Stop();
         }
         /// <summary>
         /// 程式是否執行中
@@ -151,40 +182,60 @@ namespace WatchDog
         /// <returns></returns>
         public bool isRunning()
         {
+            var serverIsRunning = true;
             #region 獨立功能 檢查網頁是否正常
             if (!CheckWebApi(System.Configuration.ConfigurationManager.AppSettings["webServerIP"]))//不成功回傳false
             {
                 webState.Text = "Web Down";
                 webState.ForeColor = System.Drawing.Color.Red;
+                webDown = true;
             }
             else
             {
                 webState.Text = "Web Running";
-                webState.ForeColor = System.Drawing.Color.Black;
+                webState.ForeColor = System.Drawing.Color.Green;
+                webDown = false;
             }
             #endregion
 
             #region 獨立功能 檢查ap是否正常
 
-            if (!CheckWebApi(System.Configuration.ConfigurationManager.AppSettings["APServerIP"], "\"Alive\"", () => { AP.Text = "AP Start"; }, () => { AP.Text = "AP Stop"; }))//不成功回傳false
+            if (!CheckWebApi(System.Configuration.ConfigurationManager.AppSettings["APServerIP"] + @":9000/api/Check", "\"Alive\"", () => { AP.Text = "AP Running"; AP.ForeColor = System.Drawing.Color.Green; }, () => { AP.Text = "AP Down"; AP.ForeColor = System.Drawing.Color.Red; }))//不成功回傳false
             {
-                return false;
+                serverIsRunning = false;
+                APDown = true;
+            }
+            else
+            {
+                APDown = false;
             }
             #endregion
 
             #region 獨立功能 檢查DB是否正常
-            Model1 Model1 = new Model1();
-            var info = Model1.ServerInformations.FirstOrDefault();
-            if (info != null && info.LastReport.HasValue)
+            try
             {
-                TimeSpan ts = DateTime.Now - info.LastReport.Value;
-                label2.Text = ts.ToString();
-                if (ts < new TimeSpan(0, 0, Int32.Parse(System.Configuration.ConfigurationManager.AppSettings["timmer"])))
-                    return true;
+                Model1 Model1 = new Model1();
+                var info = Model1.ServerInformations.FirstOrDefault();
+                if (info != null && info.LastReport.HasValue)
+                {
+                    DBState.Text = "DB Running";
+                    DBState.ForeColor = System.Drawing.Color.Green;
+                    TimeSpan ts = DateTime.Now - info.LastReport.Value;
+                    label2.Text = ts.ToString();
+                    if (!(ts < new TimeSpan(0, 0, Int32.Parse(System.Configuration.ConfigurationManager.AppSettings["timmer"]))))
+                        serverIsRunning = false;
+                }
+                DBDown = false;
+            }
+            catch
+            {
+                DBState.Text = "DB Down";
+                DBState.ForeColor = System.Drawing.Color.Red;
+                DBDown = true;
             }
             #endregion
 
-            return false;
+            return serverIsRunning;
         }
         /// <summary>
         /// 傳送web api確認是否回傳即回傳值是否正確
@@ -209,7 +260,7 @@ namespace WatchDog
                         return false;
                     }
                 }
-                else if (responseBody.IndexOf("HTTP 404") > 0)
+                else if (responseBody.IndexOf("HTTP 404") > 0 || responseBody.IndexOf("denied") > 0 || responseBody.IndexOf("404 Not Found") > 0)
                 {
                     return false;
                 }
@@ -223,7 +274,7 @@ namespace WatchDog
             catch (Exception ex)
             {
                 assertFail?.Invoke();
-                errorCode.Text = ex.ToString();
+                errorCode.Text = DateTime.Now.ToString() + ex.ToString();
                 return false;
             }
             return true;
@@ -231,10 +282,14 @@ namespace WatchDog
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            CloseForm form = new CloseForm();
-            if (form.ShowDialog() == DialogResult.OK)
+            if (bool.Parse(System.Configuration.ConfigurationManager.AppSettings["ISCloseProcess"]))
             {
-                Environment.Exit(Environment.ExitCode);
+                CloseForm form = new CloseForm();
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    Environment.Exit(Environment.ExitCode);
+                }
+                e.Cancel = true;
             }
             return;
         }
@@ -244,7 +299,7 @@ namespace WatchDog
             if (!timer1.Enabled)
             {
                 sleepTimer++;
-                if (sleepTimer == 120)
+                if (sleepTimer == int.Parse(System.Configuration.ConfigurationManager.AppSettings["sleep"]))
                 {
                     timer1.Start();
                     sleepTimer = 0;
